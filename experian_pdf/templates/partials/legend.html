@@ -1,0 +1,19 @@
+{% from "partials/_macros.html" import section_bar %}
+<section class="section">
+  <div class="keep-with-next">{{ section_bar("Legend") }}</div>
+  <div class="card plain">
+    <ul class="legend">
+      {% for term, desc, subs in content.LEGEND %}
+      <li><b>{{ term }}</b>{{ desc }}
+        {% if subs %}
+        <ul>
+          {% for sub_term, sub_desc in subs %}
+          <li>{% if sub_term %}<b>{{ sub_term }}</b>{% endif %}{{ sub_desc }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

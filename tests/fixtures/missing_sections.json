@@ -1,0 +1,23 @@
+{
+ "data": {
+  "result": {
+   "result_json": {
+    "INProfileResponse": {
+     "SCORE": {
+      "BureauScore": null
+     },
+     "CreditProfileHeader": {
+      "ReportNumber": "1000000000001"
+     }
+    }
+   }
+  },
+  "message": "success",
+  "result_code": 101,
+  "http_response_code": 200
+ },
+ "status": true,
+ "message": "Credit Analytics Success",
+ "request_id": "TEST_REQUEST_0001",
+ "reference_number": "REFTEST0001"
+}

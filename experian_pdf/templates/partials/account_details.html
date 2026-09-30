@@ -1,0 +1,110 @@
+{% from "partials/_macros.html" import section_bar, check %}
+<section class="section">
+  <div class="keep-with-next">
+    {{ section_bar("Credit Account Information Details") }}
+    <p class="intro">{{ content.ACCOUNTS_INTRO }}</p>
+  </div>
+  {% for a in accounts %}
+  <div class="account">
+    <div class="keep">
+      <div class="card holder">
+        <table class="holder-row">
+          <tr>
+            <td>
+              <div class="holder-name">{{ a.holder_name }}</div>
+              <div class="holder-addr"><span class="lbl">Address -</span><span class="addr">{{ a.address }}</span></div>
+            </td>
+            <td class="acct-no">{{ check() }} <span class="lbl">Acct :</span>{{ a.index }}</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card acct-block">
+        <div class="sub-title ruled">Credit Account details</div>
+        <table class="terms3">
+          <tr>
+            {% for title, rows in [("Account Terms", a.terms), ("Account Description", a.description), ("Account Details", a.details)] %}
+            <td class="terms-col">
+              <div class="terms-title">{{ title }}</div>
+              <div class="terms-rows">
+                {% for label, value in rows %}
+                <div class="kv"><span class="v{% if value|length > 24 %} long{% endif %}">{{ value }}</span><span class="k">{{ label }}</span></div>
+                {% endfor %}
+              </div>
+            </td>
+            {% endfor %}
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="sub-title ph-title">Payment History</div>
+    <table class="ph">
+      <thead>
+        <tr><th class="yr">Year</th>{% for m in months %}<th>{{ m }}</th>{% endfor %}</tr>
+      </thead>
+      <tbody>
+        {% for row in a.history %}
+        <tr>
+          <td class="yr">{{ row.year }}</td>
+          {% for cell in row.cells %}
+          <td>{% if cell %}<span class="dpd {{ cell.cls }}">{{ cell.value }}</span>{% endif %}</td>
+          {% endfor %}
+        </tr>
+        {% else %}
+        <tr><td class="yr">-</td>{% for m in months %}<td></td>{% endfor %}</tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="personal-wrap">
+      <div class="sub-title pd-title">Consumer Personal details on the Credit Account</div>
+      <table class="personal">
+        <tr>
+          <td class="pd-left">
+            <table class="pd-kv">
+              <tr><td class="lbl">Date of Birth</td><td>{{ a.personal.dob }}</td></tr>
+              <tr><td class="lbl">Gender</td><td>{{ a.personal.gender }}</td></tr>
+              <tr><td class="lbl">Occupation</td><td>{{ a.personal.occupation }}</td></tr>
+              <tr><td class="lbl">Email Address</td><td class="brk">{{ a.personal.email }}</td></tr>
+            </table>
+          </td>
+          <td class="pd-mid">
+            <table class="pd-phones">
+              <thead>
+                <tr>
+                  <th class="pt">Phone Type</th><th class="pn">Phone Number</th><th class="pe">Extension</th>
+                  <th class="pt">Phone Type</th><th class="pn">Phone Number</th><th class="pe">Extension</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for pair in a.phone_rows %}
+                <tr>
+                  {% for p in pair %}
+                  <td class="ptype{% if p.type == '-' %} none{% endif %}">{{ p.type }}</td><td class="brk">{{ p.number }}</td><td>{{ p.ext }}</td>
+                  {% endfor %}
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </td>
+          <td class="pd-right">
+            <table class="pd-ids">
+              <thead>
+                <tr><th class="it">ID Type</th><th class="in">ID Number</th><th class="id">Date of Issue</th><th class="id">Date of Expiry</th></tr>
+              </thead>
+              <tbody>
+                {% for i in a.ids %}
+                <tr><td class="lbl">{{ i.type }}</td><td class="brk">{{ i.number }}</td><td>{{ i.issue }}</td><td>{{ i.expiry }}</td></tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  {% else %}
+  <div class="card empty-card">{{ content.NO_ACCOUNTS }}</div>
+  {% endfor %}
+</section>

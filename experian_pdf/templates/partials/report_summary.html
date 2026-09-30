@@ -1,0 +1,45 @@
+{% from "partials/_macros.html" import section_bar %}
+<section class="section keep">
+  {{ section_bar("Report Summary") }}
+  <table class="summary-cards">
+    <tr>
+      <td class="card sc">
+        <div class="sc-title">Credit Account Summary</div>
+        <table class="sc-rows">
+          <tr><td class="lbl">Total number of Accounts -</td><td class="val">{{ summary.total }}</td></tr>
+          <tr><td class="lbl">Active Accounts -</td><td class="val">{{ summary.active }}</td></tr>
+          <tr><td class="lbl">Closed Accounts -</td><td class="val">{{ summary.closed }}</td></tr>
+          <tr><td class="lbl">SF/WD/WO/SET/RES -</td><td class="val">{{ summary.default }}</td></tr>
+        </table>
+      </td>
+      <td class="gap"></td>
+      <td class="card sc">
+        <div class="sc-title">Current Balance Amount Summary</div>
+        <table class="sc-rows narrow">
+          <tr><td class="lbl">Total Current Bal. amt -</td><td class="val">{{ summary.balance_all }}</td></tr>
+          <tr><td class="lbl">SF/WD/WO/Settled amt -</td><td class="val">{{ summary.balance_sf }}</td></tr>
+          <tr><td class="lbl">Secured Accounts amt -</td><td class="val">{{ summary.balance_secured }}</td></tr>
+          <tr><td class="lbl">Unsecured Accounts amt -</td><td class="val">{{ summary.balance_unsecured }}</td></tr>
+        </table>
+      </td>
+      <td class="gap"></td>
+      <td class="card sc">
+        <div class="sc-title">Credit Enquiry Summary</div>
+        <table class="sc-rows">
+          {% for days in [7, 30, 90, 180] %}
+          <tr><td class="lbl">Last {{ days }} days credit enquiries -</td><td class="val">{{ summary.caps[loop.index0] }}</td></tr>
+          {% endfor %}
+        </table>
+      </td>
+      <td class="gap"></td>
+      <td class="card sc">
+        <div class="sc-title">Non-Credit Enquiry Summary</div>
+        <table class="sc-rows">
+          {% for days in [7, 30, 90, 180] %}
+          <tr><td class="lbl">Last {{ days }} days non-credit enquiries -</td><td class="val">{{ summary.non_caps[loop.index0] }}</td></tr>
+          {% endfor %}
+        </table>
+      </td>
+    </tr>
+  </table>
+</section>

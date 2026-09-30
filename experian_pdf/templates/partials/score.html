@@ -1,0 +1,22 @@
+{% from "partials/_macros.html" import section_bar %}
+<section class="section keep">
+  {{ section_bar("Experian Credit Score") }}
+  <p class="intro">{{ content.SCORE_INTRO }}</p>
+  <table class="score-row">
+    <tr>
+      <td class="gauge-cell">
+        {{ gauge_svg | safe }}
+        <table class="gauge-scale"><tr><td class="min">300</td><td class="max">900</td></tr></table>
+      </td>
+      <td class="score-value">{{ score.display }}</td>
+      <td class="factors-cell">
+        <div class="card factors">
+          <div class="factors-title">Score Factors</div>
+          {% for term, desc in content.SCORE_FACTORS %}
+          <div class="factor"><b>{{ term }}</b>: {{ desc }}</div>
+          {% endfor %}
+        </div>
+      </td>
+    </tr>
+  </table>
+</section>

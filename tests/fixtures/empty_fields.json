@@ -1,0 +1,271 @@
+{
+ "data": {
+  "result": {
+   "result_json": {
+    "INProfileResponse": {
+     "Header": {
+      "ReportDate": "20260101",
+      "ReportTime": "101500"
+     },
+     "CreditProfileHeader": {
+      "ReportDate": "20260101",
+      "ReportTime": "101500",
+      "ReportNumber": "1000000000001",
+      "Version": "V2.4"
+     },
+     "SCORE": {
+      "BureauScore": "0"
+     },
+     "Current_Application": {
+      "Current_Application_Details": {
+       "Enquiry_Reason": "6",
+       "Amount_Financed": "0",
+       "Duration_Of_Agreement": "0",
+       "Current_Applicant_Details": {
+        "First_Name": null,
+        "Last_Name": "",
+        "IncomeTaxPan": null
+       }
+      }
+     },
+     "CAIS_Account": {
+      "CAIS_Summary": null,
+      "CAIS_Account_DETAILS": [
+       {
+        "Subscriber_Name": "",
+        "Account_Number": "",
+        "Account_Type": "",
+        "Account_Status": "",
+        "Portfolio_Type": "",
+        "Open_Date": "",
+        "Date_Closed": "",
+        "Date_Reported": "",
+        "Date_of_Last_Payment": "",
+        "CurrencyCode": "",
+        "Highest_Credit_or_Original_Loan_Amount": "",
+        "Credit_Limit_Amount": "",
+        "Current_Balance": "",
+        "Amount_Past_Due": "",
+        "Rate_of_Interest": "",
+        "Repayment_Tenure": "",
+        "Value_of_Collateral": "",
+        "Type_of_Collateral": "",
+        "AccountHoldertypeCode": "",
+        "Occupation_Code": "",
+        "SuitFiled_WilfulDefault": "",
+        "SuitFiledWillfulDefaultWrittenOffStatus": "",
+        "Written_off_Settled_Status": "",
+        "Written_Off_Amt_Total": "",
+        "Written_Off_Amt_Principal": "",
+        "Settlement_Amount": "",
+        "CAIS_Account_History": [],
+        "CAIS_Holder_Details": [],
+        "CAIS_Holder_ID_Details": null,
+        "CAIS_Holder_Phone_Details": {},
+        "CAIS_Holder_Address_Details": []
+       },
+       {
+        "Subscriber_Name": "Test Bank 3 Ltd",
+        "Account_Number": "XXXXXXXX1002",
+        "Account_Type": "99",
+        "Account_Status": "11",
+        "Portfolio_Type": "I",
+        "Open_Date": "20120315",
+        "Date_Closed": null,
+        "Date_Reported": "20251231",
+        "Date_of_Last_Payment": "20251205",
+        "CurrencyCode": "INR",
+        "Highest_Credit_or_Original_Loan_Amount": "500000",
+        "Credit_Limit_Amount": null,
+        "Current_Balance": 1398469,
+        "Amount_Past_Due": "0",
+        "Rate_of_Interest": "11.500",
+        "Repayment_Tenure": "36",
+        "Value_of_Collateral": null,
+        "Type_of_Collateral": null,
+        "AccountHoldertypeCode": "1",
+        "Occupation_Code": "S",
+        "SuitFiled_WilfulDefault": "00",
+        "SuitFiledWillfulDefaultWrittenOffStatus": null,
+        "Written_off_Settled_Status": null,
+        "Written_Off_Amt_Total": null,
+        "Written_Off_Amt_Principal": null,
+        "Settlement_Amount": null,
+        "CAIS_Account_History": [
+         {
+          "Year": "2025",
+          "Month": "12",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "11",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "10",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "09",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "08",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "07",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "06",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "05",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "04",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "03",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "02",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2025",
+          "Month": "01",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2024",
+          "Month": "12",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         },
+         {
+          "Year": "2024",
+          "Month": "11",
+          "Days_Past_Due": "0",
+          "Asset_Classification": "?"
+         }
+        ],
+        "CAIS_Holder_Details": {
+         "First_Name_Non_Normalized": "TESTFIRST",
+         "Middle_Name_1_Non_Normalized": null,
+         "Surname_Non_Normalized": "VERYLONGSURNAMEWITHOUTANYSPACESTHATMUSTWRAPINSIDEITSBOXANDNEVEROVERFLOWTHEPAGE TESTLAST",
+         "Gender_Code": "2",
+         "Date_of_birth": "19900115",
+         "Income_TAX_PAN": "ABCDE1234F"
+        },
+        "CAIS_Holder_ID_Details": [
+         {
+          "Income_TAX_PAN": "ABCDE1234F",
+          "PAN_Issue_Date": null,
+          "PAN_Expiration_Date": null,
+          "EMailId": "TEST.USER@EXAMPLE.COM",
+          "Passport_Number": null,
+          "Voter_ID_Number": null,
+          "Universal_ID_Number": null,
+          "Driver_License_Number": null,
+          "Ration_Card_Number": null
+         }
+        ],
+        "CAIS_Holder_Phone_Details": [
+         {
+          "Telephone_Type": "01",
+          "Mobile_Telephone_Number": "9000000001",
+          "Telephone_Number": null,
+          "Telephone_Extension": null,
+          "EMailId": "TEST.USER@EXAMPLE.COM"
+         },
+         {
+          "Telephone_Type": "03",
+          "Mobile_Telephone_Number": null,
+          "Telephone_Number": "02200000000",
+          "Telephone_Extension": "12",
+          "EMailId": null
+         }
+        ],
+        "CAIS_Holder_Address_Details": {
+         "First_Line_Of_Address_non_normalized": "HOUSE 29 TEST AVENUE SAMPLE NAGAR TESTCITY TEST AVENUE SAMPLE NAGAR TESTCITY TEST AVENUE SAMPLE NAGAR TESTCITY TEST AVENUE SAMPLE NAGAR TESTCITY TEST AVENUE SAMPLE NAGAR TESTCITY TEST AVENUE SAMPLE NAGAR TESTCITY ",
+         "State_non_normalized": "77",
+         "ZIP_Postal_Code_non_normalized": "400001"
+        },
+        "Extra_Unknown_Field": {
+         "nested": [
+          1,
+          2,
+          3
+         ]
+        }
+       }
+      ]
+     },
+     "CAPS": {
+      "CAPS_Summary": {},
+      "CAPS_Application_Details": {
+       "Subscriber_Name": "Test Finance 1 Private Limited",
+       "Date_of_Request": "20251201",
+       "ReportNumber": "2000000000001",
+       "Enquiry_Reason": "13",
+       "Amount_Financed": "100000",
+       "Duration_Of_Agreement": "24",
+       "CAPS_Applicant_Details": null,
+       "CAPS_Applicant_Address_Details": {
+        "FlatNoPlotNoHouseNo": "FLAT 101",
+        "BldgNoSocietyName": "TEST RESIDENCY",
+        "RoadNoNameAreaLocality": "SAMPLE ROAD",
+        "City": "TESTCITY",
+        "State": "27",
+        "PINCode": "400001"
+       }
+      }
+     },
+     "NonCreditCAPS": {
+      "NonCreditCAPS_Summary": {
+       "NonCreditCAPSLast7Days": "0",
+       "NonCreditCAPSLast30Days": "1",
+       "NonCreditCAPSLast90Days": "1",
+       "NonCreditCAPSLast180Days": "1"
+      }
+     }
+    }
+   }
+  },
+  "message": "success",
+  "result_code": 101,
+  "http_response_code": 200
+ },
+ "status": true,
+ "message": "Credit Analytics Success",
+ "request_id": "TEST_REQUEST_0001",
+ "reference_number": "REFTEST0001"
+}

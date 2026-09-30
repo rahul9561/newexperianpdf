@@ -1,0 +1,29 @@
+{% from "partials/_macros.html" import section_bar %}
+<section class="section keep">
+  {{ section_bar("Current Application Information") }}
+  <div class="card app-info">
+    <table class="kv3">
+      <colgroup><col class="l"><col class="v"><col class="g"><col class="l"><col class="v"><col class="g"><col class="l"><col class="v"></colgroup>
+      <tr>
+        <td class="lbl">Name -</td><td class="val">{{ applicant.name }}</td><td></td>
+        <td class="lbl">Date of Birth -</td><td class="val">{{ applicant.dob }}</td><td></td>
+        <td class="lbl">Ration Card -</td><td class="val">{{ applicant.ration_card }}</td>
+      </tr>
+      <tr>
+        <td class="lbl">Mobile Phone -</td><td class="val">{{ applicant.mobile }}</td><td></td>
+        <td class="lbl">PAN -</td><td class="val">{{ applicant.pan }}</td><td></td>
+        <td class="lbl">Driving License -</td><td class="val">{{ applicant.driving_license }}</td>
+      </tr>
+      <tr>
+        <td class="lbl">Passport Number -</td><td class="val">{{ applicant.passport }}</td><td></td>
+        <td class="lbl">Voter ID -</td><td class="val">{{ applicant.voter_id }}</td><td></td>
+        <td></td><td></td>
+      </tr>
+      <tr>
+        <td class="lbl">Email -</td><td class="val">{{ applicant.email }}</td><td></td>
+        <td class="lbl">Aadhaar Number -</td><td class="val">{{ applicant.aadhaar }}</td><td></td>
+        <td></td><td></td>
+      </tr>
+    </table>
+  </div>
+</section>

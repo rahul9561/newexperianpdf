@@ -1,0 +1,4715 @@
+{
+  "data": {
+    "result": {
+      "result_json": {
+        "INProfileResponse": {
+          "CAPS": {
+            "CAPS_Summary": {
+              "CAPSLast7Days": "0",
+              "CAPSLast30Days": "0",
+              "CAPSLast90Days": "0",
+              "CAPSLast180Days": "0"
+            }
+          },
+          "SCORE": { "BureauScore": "804", "BureauScoreConfidLevel": null },
+          "Header": {
+            "ReportDate": "20260928",
+            "ReportTime": "172052",
+            "SystemCode": "0",
+            "MessageText": null
+          },
+          "UserMessage": { "UserMessageText": "Normal Response" },
+          "CAIS_Account": {
+            "CAIS_Summary": {
+              "Credit_Account": {
+                "CreditAccountTotal": "15",
+                "CreditAccountActive": "4",
+                "CreditAccountClosed": "11",
+                "CreditAccountDefault": "0",
+                "CADSuitFiledCurrentBalance": "0"
+              },
+              "Total_Outstanding_Balance": {
+                "Outstanding_Balance_All": "3252600",
+                "Outstanding_Balance_Secured": "1398469",
+                "Outstanding_Balance_UnSecured": "1854131",
+                "Outstanding_Balance_Secured_Percentage": "43",
+                "Outstanding_Balance_UnSecured_Percentage": "57"
+              }
+            },
+            "CAIS_Account_DETAILS": [
+              {
+                "Income": null,
+                "Open_Date": "20251108",
+                "Date_Closed": null,
+                "Account_Type": "05",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20260909",
+                "Account_Number": "XXXXX5250",
+                "Account_Status": "11",
+                "DateOfAddition": "20251130",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "I",
+                "Terms_Duration": null,
+                "Amount_Past_Due": "31863",
+                "Current_Balance": "1319695",
+                "Occupation_Code": null,
+                "Special_Comment": null,
+                "Subscriber_Name": "HDFC Bank Ltd",
+                "Terms_Frequency": null,
+                "Income_Indicator": null,
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "0",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN KUMAR",
+                    "First_Name_Non_Normalized": "SINGH",
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  },
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN",
+                    "First_Name_Non_Normalized": "KUMAR",
+                    "Middle_Name_1_Non_Normalized": "SINGH",
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": null,
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2026",
+                    "Month": "09",
+                    "Days_Past_Due": "3",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": "20260808",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "PVT3080001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": null,
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "0000000000??????????????????????????",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "9914996777"
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "02",
+                    "Telephone_Number": "9914996777",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "03",
+                    "Telephone_Number": "9914996777",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": null,
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "36",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "500055",
+                    "Address_indicator_non_normalized": "01",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO. F-508, F BLOCK,RAMKY ONE",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "MARVEL, GAJULARAMARAM, HYDERABAD 500055"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "36",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "500016",
+                    "Address_indicator_non_normalized": "01",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "ICICI SECURITIES,1ST FLOOR, CONCOURSE",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "BUILDING AMEERPET, HYDERABAD 500016"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "1500000",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": null,
+                "Open_Date": "20240430",
+                "Date_Closed": null,
+                "Account_Type": "10",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20260916",
+                "Account_Number": "XXXXXXXXXXXX9961",
+                "Account_Status": "11",
+                "DateOfAddition": "20240518",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "R",
+                "Terms_Duration": null,
+                "Amount_Past_Due": "0",
+                "Current_Balance": "534436",
+                "Occupation_Code": null,
+                "Special_Comment": null,
+                "Subscriber_Name": "ICICI Bank",
+                "Terms_Frequency": null,
+                "Income_Indicator": null,
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "0",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "SINGH",
+                    "First_Name_Non_Normalized": null,
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": "934000",
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2026",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": "20260806",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "PVT3090001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "000000000000000000000?000000????????",
+                "SuitFiled_WilfulDefault": "00",
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "9914996777"
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": null,
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "03",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140603",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO G403 AASTHA APARTMENT BHABHAT DI",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "ST MOHALI"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "03",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140603",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "29 GULMOHAR AVENUE DHAKAULI",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": null
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "36",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "500072",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "ICICI SECURITIES LIMITED 214, MIG KPHG C",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "OLONY ROAD NO 1 , KUKATPALLY"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "492385",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": null,
+                "Open_Date": "20140411",
+                "Date_Closed": null,
+                "Account_Type": "02",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20260831",
+                "Account_Number": "XXXXXXXXX3026",
+                "Account_Status": "11",
+                "DateOfAddition": "20230831",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "M",
+                "Terms_Duration": "240",
+                "Amount_Past_Due": "0",
+                "Current_Balance": "1398469",
+                "Occupation_Code": null,
+                "Special_Comment": null,
+                "Subscriber_Name": "HDFC Bank Ltd",
+                "Terms_Frequency": "M",
+                "Income_Indicator": null,
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "240",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "SINGH ARUN KUMAR",
+                    "First_Name_Non_Normalized": null,
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": null,
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2026",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2023",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2023",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2023",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2023",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2023",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": "20260806",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "PVT3080001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": "0",
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": "ARUN.SINGH3@BIRLASUNLIFE.COM",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  },
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": null,
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "000000000000000000000000000000000000",
+                "SuitFiled_WilfulDefault": "00",
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": "ARUN.SINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "9914996777",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": null,
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "10",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "800001",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO.A/88, JAGAT AMRAVATI",
+                    "Third_Line_Of_Address_non_normalized": "FLAT, PATNA800001",
+                    "Second_Line_Of_Address_non_normalized": "APARTMENT, BAILEY ROAD, NEAR OFFICER'S"
+                  },
+                  {
+                    "City_non_normalized": "SULTANPUR ROAD LUCKNOW LUCKNOW",
+                    "State_non_normalized": "09",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "226020",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT2A/T6101 FLOOR1ST UPAVPAWADH",
+                    "Third_Line_Of_Address_non_normalized": "YOJNA SULTANPUR ROAD AWADH VIHAR YOJNA",
+                    "Second_Line_Of_Address_non_normalized": "VIHAR YOJNA MANDAKNI S NO AWADH VIHAR"
+                  },
+                  {
+                    "City_non_normalized": "SULTANPUR ROAD LUCKNOW LUCKNOW",
+                    "State_non_normalized": "09",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "226020",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT-2A/T6-101 FLOOR-1ST UPAVP-AWADH",
+                    "Third_Line_Of_Address_non_normalized": "YOJNA SULTANPUR ROAD AWADH VIHAR YOJNA",
+                    "Second_Line_Of_Address_non_normalized": "VIHAR YOJNA MANDAKNI S NO AWADH VIHAR"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "10",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "800001",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "GROUND FLOOR KONARK SHREE BUILDING",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "EXHIBITION ROAD  PATNA,PATNA"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "10",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "800001",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO.-A/88, JAGAT AMRAVATI",
+                    "Third_Line_Of_Address_non_normalized": "FLAT, PATNA-800001",
+                    "Second_Line_Of_Address_non_normalized": "APARTMENT, BAILEY ROAD, NEAR OFFICER'S"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "03",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140603",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "HOUSE NO.29 GULMOHUR AVENUE DHAKOLI",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "ZIRAKPUR, SAS NAGAR MOHALI"
+                  },
+                  {
+                    "City_non_normalized": "SULTANPUR ROAD  LUCKNOW LUCKNOW",
+                    "State_non_normalized": "09",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "226020",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT-2A/T6-101 FLOOR-1ST UPAVP-AWADH",
+                    "Third_Line_Of_Address_non_normalized": "YOJNA SULTANPUR ROAD AWADH VIHAR YOJNA",
+                    "Second_Line_Of_Address_non_normalized": "VIHAR YOJNA MANDAKNI S NO AWADH VIHAR"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "2784000",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": null,
+                "Open_Date": "20090518",
+                "Date_Closed": null,
+                "Account_Type": "10",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20260831",
+                "Account_Number": "XXXXXXXXXXXXXXX2148",
+                "Account_Status": "11",
+                "DateOfAddition": "20230831",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "R",
+                "Terms_Duration": null,
+                "Amount_Past_Due": null,
+                "Current_Balance": "0",
+                "Occupation_Code": "S",
+                "Special_Comment": null,
+                "Subscriber_Name": "HDFC Bank Ltd",
+                "Terms_Frequency": null,
+                "Income_Indicator": null,
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "0",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN KUMAR SINGH",
+                    "First_Name_Non_Normalized": null,
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  },
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "SINGH",
+                    "First_Name_Non_Normalized": "ARUN",
+                    "Middle_Name_1_Non_Normalized": "KUMAR",
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": "1075000",
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2026",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2026",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2025",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2024",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2023",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2023",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2023",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2023",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2023",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": "20250530",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "PVT3080001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": "ARUN.SINGH3@BIRLASUNLIFE.COM",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "000000000000000000000000000000000000",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": "ARUN.SINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "03",
+                    "Telephone_Number": "66212029",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "ARUN.SINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "9914996777"
+                  },
+                  {
+                    "EMailId": "ARUN.SINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "03",
+                    "Telephone_Number": "5123888",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "ARUN.SINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "8873002570"
+                  },
+                  {
+                    "EMailId": "ARUN.SINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "9887788069",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "ARUN.SINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "9887788069"
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": null,
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "03",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "160104",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO G-403 4TH FLOOR",
+                    "Third_Line_Of_Address_non_normalized": "BHABHAT DIST MOHALI",
+                    "Second_Line_Of_Address_non_normalized": "ASTHA APPARTMENT"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "04",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "160104",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO G-403 4TH FLOOR",
+                    "Third_Line_Of_Address_non_normalized": "BHABHAT DIST MOHALI",
+                    "Second_Line_Of_Address_non_normalized": "ASTHA APPARTMENT"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "07",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "110007",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "BIRLASUNLIFE ASSET MANAGMNT CO",
+                    "Third_Line_Of_Address_non_normalized": "MANZIL 23 BARAKHAMBA ROAD",
+                    "Second_Line_Of_Address_non_normalized": "LTD 406-415 4TH FLR NARAIN"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "10",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "800001",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "BIRLA SUNLIFE MUTUAL FUND",
+                    "Third_Line_Of_Address_non_normalized": "EXHIBITION ROAD",
+                    "Second_Line_Of_Address_non_normalized": "GROUND FLOOR KONARK SHREE BLDG"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "342003",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "BIRLA SUN LIFE ASSET MANAGEMEN",
+                    "Third_Line_Of_Address_non_normalized": "GOLBLDG ABOVE UTI SECURITIES",
+                    "Second_Line_Of_Address_non_normalized": "2ND FLOOR K K PLAZA IC ROAD"
+                  },
+                  {
+                    "City_non_normalized": "PATNA",
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "800001",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "BIRLA SUNLIFE MUTUAL FUND",
+                    "Third_Line_Of_Address_non_normalized": "EXHIBITION ROAD",
+                    "Second_Line_Of_Address_non_normalized": "GROUND FLOOR KONARK SHREE BLDG"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "800001",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "BIRLA SUNLIFE MUTUAL FUND",
+                    "Third_Line_Of_Address_non_normalized": "EXHIBITION ROAD",
+                    "Second_Line_Of_Address_non_normalized": "GROUND FLOOR KONARK SHREE BLDG"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "700071",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "BIRLA SUNLIFE MUTUAL FUND",
+                    "Third_Line_Of_Address_non_normalized": "SHAKESPEAR SARANI",
+                    "Second_Line_Of_Address_non_normalized": "1ST FLOOR NEW BK MARKET 16A"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "186967",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": "2496612",
+                "Open_Date": "20181102",
+                "Date_Closed": "20221203",
+                "Account_Type": "05",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20221231",
+                "Account_Number": "XXXXXXXXXXX8282",
+                "Account_Status": "13",
+                "DateOfAddition": "20191231",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "I",
+                "Terms_Duration": "049",
+                "Amount_Past_Due": "0",
+                "Current_Balance": "0",
+                "Occupation_Code": "S",
+                "Special_Comment": null,
+                "Subscriber_Name": "Citicorp Finance ( I ) ltd",
+                "Terms_Frequency": "M",
+                "Income_Indicator": null,
+                "Rate_of_Interest": "10.990",
+                "Repayment_Tenure": "49",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "SINGH",
+                    "First_Name_Non_Normalized": "ARUN KUMAR",
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": null,
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2022",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2022",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": "20221203",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "NBF6020002",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "000000000000000000000000000000000000",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": "ARUN.N.SINGH@ADITYABIRLACAPITAL.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "919914996777"
+                  },
+                  {
+                    "EMailId": "ARUN.N.SINGH@ADITYABIRLACAPITAL.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "02",
+                    "Telephone_Number": "9914996777",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": null,
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": "GAUTAM BUDDHA NAGAR",
+                    "State_non_normalized": "09",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "201301",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "B-71",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "SEC 71"
+                  },
+                  {
+                    "City_non_normalized": "SAS NAGAR",
+                    "State_non_normalized": "03",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140603",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "HOUSE 29 GULMOHAR AVENUE",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "DHAKOLI SAS NAGAR"
+                  },
+                  {
+                    "City_non_normalized": "NEW DELHI",
+                    "State_non_normalized": "07",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "110001",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "ADITYA BIRLA FINANCE LIMITED",
+                    "Third_Line_Of_Address_non_normalized": "BARAKHAMBA ROAD",
+                    "Second_Line_Of_Address_non_normalized": "15TH FLOOR VIJAYA BANK BUILDING"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "1000000",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": null,
+                "Open_Date": "20120922",
+                "Date_Closed": "20160906",
+                "Account_Type": "01",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20160930",
+                "Account_Number": "XXXX6719",
+                "Account_Status": "13",
+                "DateOfAddition": "20130930",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "I",
+                "Terms_Duration": null,
+                "Amount_Past_Due": "0",
+                "Current_Balance": "0",
+                "Occupation_Code": null,
+                "Special_Comment": null,
+                "Subscriber_Name": "HDFC Bank Ltd",
+                "Terms_Frequency": null,
+                "Income_Indicator": null,
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "0",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN KUMAR",
+                    "First_Name_Non_Normalized": "SINGH",
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  },
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN KUMAR SINGH",
+                    "First_Name_Non_Normalized": null,
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": null,
+                "Subscriber_comments": null,
+                "Value_of_Collateral": "0",
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2016",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  }
+                ],
+                "Date_of_Last_Payment": "20160906",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "PVT3080001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": "ARUNSINGH3@BIRLASUNLIFE.COM",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "000000000000000000000000000000000000",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": "ARUNSINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "8873002570"
+                  },
+                  {
+                    "EMailId": "ARUNSINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "03",
+                    "Telephone_Number": "6450354",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "ARUNSINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "03",
+                    "Telephone_Number": "8873002570",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "ARUNSINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "02",
+                    "Telephone_Number": "8873002570",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "ARUNSINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "02",
+                    "Telephone_Number": "6450354",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "ARUNSINGH3@BIRLASUNLIFE.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "8873002570",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": null,
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "10",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "800024",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO A/88 JAGAT AMRAWATI MAHESH NAGAR",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "BAILY ROAD BEHIND OFFICERS FLAT"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "10",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "800024",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO A/88 JAGAT AMRAWATI MAHESH NAGAR",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "BAILY ROAD BEHIND OFFICERS FLAT PATNA"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "800024",
+                    "Address_indicator_non_normalized": "02",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO A/88 JAGAT AMRAWATI MAHESH NAGAR",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "BAILY ROAD BEHIND OFFICERS FLAT PATNA"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "350000",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": "",
+                "Open_Date": "20120608",
+                "Date_Closed": "20180601",
+                "Account_Type": "10",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20180731",
+                "Account_Number": "XXXXXXXXXXX9090",
+                "Account_Status": "13",
+                "DateOfAddition": "20151231",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "R",
+                "Terms_Duration": null,
+                "Amount_Past_Due": "0",
+                "Current_Balance": "0",
+                "Occupation_Code": "",
+                "Special_Comment": null,
+                "Subscriber_Name": "Standard Chartered Bank",
+                "Terms_Frequency": null,
+                "Income_Indicator": "",
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "0",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN",
+                    "First_Name_Non_Normalized": "KUMAR",
+                    "Middle_Name_1_Non_Normalized": "SINGH",
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  },
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN KUMAR SINGH",
+                    "First_Name_Non_Normalized": null,
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": "267000",
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2018",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": null,
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "FOR2270001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": "0",
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "0?00?????????000000000000000000?????",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "919874696669"
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "00",
+                    "Telephone_Number": "919874696669",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "00",
+                    "Telephone_Number": "033662",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "03",
+                    "Telephone_Number": "03366212027",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "02",
+                    "Telephone_Number": "03366212027",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "03366212027",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": "",
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "19",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "700071",
+                    "Address_indicator_non_normalized": "04",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "C/O BIRLA SUN LIFE MUTUAL FUND 1ST",
+                    "Third_Line_Of_Address_non_normalized": "KOLKATA",
+                    "Second_Line_Of_Address_non_normalized": "FLOOR,B K MARKET 16A,SHAKESPEARE SARANI"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "700071",
+                    "Address_indicator_non_normalized": "04",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "C/O BIRLA SUN LIFE MUTUAL FUND 16A,",
+                    "Third_Line_Of_Address_non_normalized": "MARKET KOLKATA",
+                    "Second_Line_Of_Address_non_normalized": "SHAKESPEARE SARANI 1ST FLOOR NEW B K"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "700071",
+                    "Address_indicator_non_normalized": "04",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "C/O BIRLA SUN LIFE MUTUAL FUND 1ST",
+                    "Third_Line_Of_Address_non_normalized": "KOLKATA",
+                    "Second_Line_Of_Address_non_normalized": "FLOOR,B K MARKET 16A,SHAKESPEARE SARANI"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "89325",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": "",
+                "Open_Date": "20100317",
+                "Date_Closed": "20110405",
+                "Account_Type": "06",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20210331",
+                "Account_Number": "XXXXXXXXXX0516",
+                "Account_Status": "13",
+                "DateOfAddition": "20210331",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "I",
+                "Terms_Duration": null,
+                "Amount_Past_Due": "0",
+                "Current_Balance": "0",
+                "Occupation_Code": "",
+                "Special_Comment": null,
+                "Subscriber_Name": "Bajaj Finance Limited",
+                "Terms_Frequency": null,
+                "Income_Indicator": "",
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "0",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN KUMAR SINGH",
+                    "First_Name_Non_Normalized": null,
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": null,
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2021",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": null,
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "NBF6030001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "N",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "9874696669"
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": "",
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "19",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "700042",
+                    "Address_indicator_non_normalized": "04",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO-8-150/1 B B CHATTERJEE ROAD,",
+                    "Third_Line_Of_Address_non_normalized": "BENGAL 700042",
+                    "Second_Line_Of_Address_non_normalized": "AHELI BUILDING, KASBA KOLKATA WEST"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "15900",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": "",
+                "Open_Date": "20090402",
+                "Date_Closed": "20190318",
+                "Account_Type": "02",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20190331",
+                "Account_Number": "XXXXXXXXX1718",
+                "Account_Status": "13",
+                "DateOfAddition": "20160331",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "M",
+                "Terms_Duration": "120",
+                "Amount_Past_Due": null,
+                "Current_Balance": "0",
+                "Occupation_Code": "",
+                "Special_Comment": null,
+                "Subscriber_Name": "Canara Bank",
+                "Terms_Frequency": null,
+                "Income_Indicator": "",
+                "Rate_of_Interest": "8.950",
+                "Repayment_Tenure": "120",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741219",
+                    "Income_TAX_PAN": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN KUMAR SINGH",
+                    "First_Name_Non_Normalized": null,
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": null,
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2019",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "01",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "12",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "11",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "10",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "09",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "08",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "07",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "06",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "05",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "04",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "03",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "02",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2017",
+                    "Month": "01",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "12",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "11",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "10",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "09",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "08",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "07",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "06",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "05",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "04",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  },
+                  {
+                    "Year": "2016",
+                    "Month": "03",
+                    "Days_Past_Due": null,
+                    "Asset_Classification": "S"
+                  }
+                ],
+                "Date_of_Last_Payment": "20190302",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "PUB1060001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": "XXXXX802",
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  },
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": "XXXXX802",
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "0000000000000SSSSSSSSSSSSSSSSSSSSSSS",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": null,
+                    "FaxNumber": null,
+                    "Telephone_Type": "00",
+                    "Telephone_Number": "919855155294",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": null,
+                    "FaxNumber": null,
+                    "Telephone_Type": "00",
+                    "Telephone_Number": "919814990784",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": null,
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "9814245294",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": null,
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "919855155294",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": "",
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": "ZIRAKPUR",
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140201",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "HNO 29",
+                    "Third_Line_Of_Address_non_normalized": "DHAKOLI",
+                    "Second_Line_Of_Address_non_normalized": "GULMOHAR AVENUE"
+                  },
+                  {
+                    "City_non_normalized": "ZIRAKPUR",
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140201",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "HNO 29",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "GULMOHAR AVENUE"
+                  },
+                  {
+                    "City_non_normalized": "ZIRAKPUR",
+                    "State_non_normalized": "03",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140201",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "HNO 29",
+                    "Third_Line_Of_Address_non_normalized": "DHAKOLI",
+                    "Second_Line_Of_Address_non_normalized": "GULMOHAR AVENUE"
+                  },
+                  {
+                    "City_non_normalized": "ZIRAKPUR",
+                    "State_non_normalized": "03",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "160104",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO G 403",
+                    "Third_Line_Of_Address_non_normalized": "BHABAT",
+                    "Second_Line_Of_Address_non_normalized": "ASTHA APARTMENTS"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "765000",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": "",
+                "Open_Date": "20080109",
+                "Date_Closed": "20101127",
+                "Account_Type": "10",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20120630",
+                "Account_Number": "XXXXXXXX9193",
+                "Account_Status": "13",
+                "DateOfAddition": "20100930",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "R",
+                "Terms_Duration": "REV",
+                "Amount_Past_Due": null,
+                "Current_Balance": "0",
+                "Occupation_Code": "",
+                "Special_Comment": null,
+                "Subscriber_Name": "Barclays Bank",
+                "Terms_Frequency": "M",
+                "Income_Indicator": "",
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "-1",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "SINGH",
+                    "First_Name_Non_Normalized": "KUMAR",
+                    "Middle_Name_1_Non_Normalized": "ARUN",
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": "10000",
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2012",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2010",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "-1"
+                  },
+                  {
+                    "Year": "2010",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "-1"
+                  },
+                  {
+                    "Year": "2010",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "-1"
+                  },
+                  {
+                    "Year": "2010",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "-1"
+                  }
+                ],
+                "Date_of_Last_Payment": "20090701",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "FOR2110001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "000?0??00000000000000???????????????",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "01725510240",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "9887788069",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "9887788069"
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": "",
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140603",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "# 29 GULMOHAR VIHAR ZIRAKPUR CHANDIGAR",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "CHANDIGARH"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140603",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "# 29 GULMOHAR VIHAR ZIRAKPUR CHANDIGARH",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "CHANDIGARH"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140603",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "# 29 GULMOHAR VIHAR ZIRAKPUR",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "CHANDIGARHCHANDIGARH"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "160017",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "ICICI DIRECT SCO 181/182 1ST FLOOR",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "SECTOR 9 C JOINIED BRITISH LIBRAREY"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140603",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "H NO 1306 SEC 11 PANCHKULA PANCHKUDA",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "CHANDIGARHCHANDIGARH"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "15449",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": "",
+                "Open_Date": "20070403",
+                "Date_Closed": "20130920",
+                "Account_Type": "05",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20130930",
+                "Account_Number": "XXXXXXXXXXXX5901",
+                "Account_Status": "13",
+                "DateOfAddition": "20100930",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "I",
+                "Terms_Duration": "001",
+                "Amount_Past_Due": null,
+                "Current_Balance": "0",
+                "Occupation_Code": "",
+                "Special_Comment": null,
+                "Subscriber_Name": "ICICI Bank",
+                "Terms_Frequency": null,
+                "Income_Indicator": "",
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "-1",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "",
+                    "Passport_Number": "",
+                    "Voter_ID_Number": "",
+                    "Surname_Non_Normalized": "ARUN KUMAR SINGH",
+                    "First_Name_Non_Normalized": null,
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  },
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "",
+                    "Passport_Number": "",
+                    "Voter_ID_Number": "",
+                    "Surname_Non_Normalized": "ARUN",
+                    "First_Name_Non_Normalized": "KUMAR",
+                    "Middle_Name_1_Non_Normalized": "SINGH",
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": null,
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2013",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2012",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2010",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2010",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2010",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": "20120405",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "PVT3090001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": null,
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "00000000000000000000000000000000?000",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "9814245294",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "6510240",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "00",
+                    "Telephone_Number": "6510240",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": "MAIL_ARUNSINGH@YAHOO.COM",
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "9814245294"
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": "",
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": "CHANDIGARH",
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "160017",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "SCO-181-182 1ST FLOOR SEC-9 C CHD NR BRI",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "TIESH LIBRARY"
+                  },
+                  {
+                    "City_non_normalized": "KHARAR",
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "140301",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "29 GULMOHAR AVENUE DHAKOLI ZIRAKPUR DIST",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "T MOHLI"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "309000",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": "",
+                "Open_Date": "20070110",
+                "Date_Closed": "20210705",
+                "Account_Type": "02",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20210731",
+                "Account_Number": "XXXXXXXXXXXX5346",
+                "Account_Status": "13",
+                "DateOfAddition": "20180731",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "M",
+                "Terms_Duration": null,
+                "Amount_Past_Due": null,
+                "Current_Balance": "0",
+                "Occupation_Code": "",
+                "Special_Comment": null,
+                "Subscriber_Name": "ICICI Bank",
+                "Terms_Frequency": null,
+                "Income_Indicator": "",
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "0",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN",
+                    "First_Name_Non_Normalized": "SINGH",
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": null,
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2021",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2021",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2020",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2019",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2018",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": "20210701",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "7",
+                "Identification_Number": "PVT3090001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  },
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": "AQWPS3422L",
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "000000000000000000000000000000000000",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": null,
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "9814245294"
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": "",
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": "PATIALA",
+                    "State_non_normalized": "03",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "136034",
+                    "Address_indicator_non_normalized": "04",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "# -29 GULMOHAR AVENUE",
+                    "Third_Line_Of_Address_non_normalized": null,
+                    "Second_Line_Of_Address_non_normalized": "ZIRAKPUR"
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "136034",
+                    "Address_indicator_non_normalized": "04",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "# -29 GULMOHAR AVENUE",
+                    "Third_Line_Of_Address_non_normalized": "PATIALA",
+                    "Second_Line_Of_Address_non_normalized": "ZIRAKPUR"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "1479000",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": "",
+                "Open_Date": "20040829",
+                "Date_Closed": "20120705",
+                "Account_Type": "10",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20140816",
+                "Account_Number": "XXXXXXXXXXXXXXX9392",
+                "Account_Status": "12",
+                "DateOfAddition": "20131016",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "R",
+                "Terms_Duration": "REV",
+                "Amount_Past_Due": "0",
+                "Current_Balance": "0",
+                "Occupation_Code": "",
+                "Special_Comment": null,
+                "Subscriber_Name": "SBI Cards and Payment Services Private Limited",
+                "Terms_Frequency": "M",
+                "Income_Indicator": "",
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "-1",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "2",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "",
+                    "Passport_Number": "",
+                    "Voter_ID_Number": "",
+                    "Surname_Non_Normalized": "ARUN",
+                    "First_Name_Non_Normalized": "KUMAR",
+                    "Middle_Name_1_Non_Normalized": "SINGH",
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": "80000",
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2014",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "07",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "02",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2014",
+                    "Month": "01",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2013",
+                    "Month": "10",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": null,
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "NBF5020001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": null,
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "0000000000??????????????????????????",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": null,
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "09874696669"
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": "",
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "700042",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "FLAT NO 8 AHILIBUILDING BBCHRTERJEE ROAD",
+                    "Third_Line_Of_Address_non_normalized": "CALCUTTA",
+                    "Second_Line_Of_Address_non_normalized": "KASBA KOLKATA"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "525",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": "",
+                "Open_Date": "20040128",
+                "Date_Closed": "20051117",
+                "Account_Type": "10",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20151231",
+                "Account_Number": "XXXXXXXXXXXXXXX3869",
+                "Account_Status": "13",
+                "DateOfAddition": "20150630",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "R",
+                "Terms_Duration": null,
+                "Amount_Past_Due": "0",
+                "Current_Balance": "0",
+                "Occupation_Code": "",
+                "Special_Comment": null,
+                "Subscriber_Name": "NatWest Markets Plc",
+                "Terms_Frequency": null,
+                "Income_Indicator": "",
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "0",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": null,
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": "",
+                    "Passport_Number": "",
+                    "Voter_ID_Number": "",
+                    "Surname_Non_Normalized": "ARUN",
+                    "First_Name_Non_Normalized": "KUMAR",
+                    "Middle_Name_1_Non_Normalized": "SINGH",
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": "50000",
+                "Subscriber_comments": null,
+                "Value_of_Collateral": null,
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2015",
+                    "Month": "12",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "11",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "09",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "08",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2015",
+                    "Month": "06",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": "20040515",
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "FOR2010001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": null,
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": null,
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "0?00?0??????????????????????????????",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": null,
+                    "FaxNumber": null,
+                    "Telephone_Type": "03",
+                    "Telephone_Number": "2541654",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  },
+                  {
+                    "EMailId": null,
+                    "FaxNumber": null,
+                    "Telephone_Type": "01",
+                    "Telephone_Number": null,
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": "919814245294"
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": null,
+                "Income_Frequency_Indicator": "",
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": "99",
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "04",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "160018",
+                    "Address_indicator_non_normalized": "03",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "SCO 53-54 SEC 8-C",
+                    "Third_Line_Of_Address_non_normalized": "CHANDIGARH",
+                    "Second_Line_Of_Address_non_normalized": null
+                  },
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": "06",
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "134109",
+                    "Address_indicator_non_normalized": "03",
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "H NO 590 SEC 8",
+                    "Third_Line_Of_Address_non_normalized": "CHANDIGARH",
+                    "Second_Line_Of_Address_non_normalized": null
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "4697",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              },
+              {
+                "Income": "",
+                "Open_Date": "20031230",
+                "Date_Closed": "20050626",
+                "Account_Type": "10",
+                "CurrencyCode": "INR",
+                "Date_Reported": "20110531",
+                "Account_Number": "XXXXXXXXXXXXXXX4521",
+                "Account_Status": "13",
+                "DateOfAddition": "20110331",
+                "Payment_Rating": "0",
+                "Portfolio_Type": "R",
+                "Terms_Duration": "REV",
+                "Amount_Past_Due": "0",
+                "Current_Balance": "0",
+                "Occupation_Code": "",
+                "Special_Comment": null,
+                "Subscriber_Name": "HDFC Bank Ltd",
+                "Terms_Frequency": null,
+                "Income_Indicator": "",
+                "Rate_of_Interest": null,
+                "Repayment_Tenure": "0",
+                "Consumer_comments": null,
+                "DefaultStatusDate": null,
+                "Settlement_Amount": "0",
+                "Type_of_Collateral": null,
+                "WriteOffStatusDate": null,
+                "CAIS_Holder_Details": [
+                  {
+                    "Alias": null,
+                    "Gender_Code": "1",
+                    "Date_of_birth": "19741220",
+                    "Income_TAX_PAN": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Surname_Non_Normalized": "ARUN KUMAR SINGH",
+                    "First_Name_Non_Normalized": null,
+                    "Middle_Name_1_Non_Normalized": null,
+                    "Middle_Name_2_Non_Normalized": null,
+                    "Middle_Name_3_Non_Normalized": null
+                  }
+                ],
+                "Credit_Limit_Amount": null,
+                "Subscriber_comments": null,
+                "Value_of_Collateral": "0",
+                "CAIS_Account_History": [
+                  {
+                    "Year": "2011",
+                    "Month": "05",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "04",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  },
+                  {
+                    "Year": "2011",
+                    "Month": "03",
+                    "Days_Past_Due": "0",
+                    "Asset_Classification": "?"
+                  }
+                ],
+                "Date_of_Last_Payment": null,
+                "LitigationStatusDate": null,
+                "AccountHoldertypeCode": "1",
+                "Identification_Number": "PVT3080001",
+                "Promotional_Rate_Flag": null,
+                "Written_Off_Amt_Total": "0",
+                "CAIS_Holder_ID_Details": [
+                  {
+                    "EMailId": null,
+                    "Income_TAX_PAN": null,
+                    "PAN_Issue_Date": null,
+                    "Passport_Number": null,
+                    "Voter_ID_Number": null,
+                    "Ration_Card_Number": null,
+                    "PAN_Expiration_Date": null,
+                    "Passport_Issue_Date": null,
+                    "Universal_ID_Number": null,
+                    "Voter_ID_Issue_Date": null,
+                    "Driver_License_Number": null,
+                    "Ration_Card_Issue_Date": null,
+                    "Universal_ID_Issue_Date": null,
+                    "Passport_Expiration_Date": null,
+                    "Voter_ID_Expiration_Date": null,
+                    "Driver_License_Issue_Date": null,
+                    "Ration_Card_Expiration_Date": null,
+                    "Universal_ID_Expiration_Date": null,
+                    "Driver_License_Expiration_Date": null
+                  }
+                ],
+                "Payment_History_Profile": "00??????????????????????????????????",
+                "SuitFiled_WilfulDefault": null,
+                "CAIS_Holder_Phone_Details": [
+                  {
+                    "EMailId": null,
+                    "FaxNumber": null,
+                    "Telephone_Type": null,
+                    "Telephone_Number": "2541654",
+                    "Telephone_Extension": null,
+                    "Mobile_Telephone_Number": null
+                  }
+                ],
+                "Date_of_First_Delinquency": null,
+                "Written_Off_Amt_Principal": "0",
+                "Income_Frequency_Indicator": "",
+                "Original_Charge_Off_Amount": null,
+                "Written_off_Settled_Status": null,
+                "CAIS_Holder_Address_Details": [
+                  {
+                    "City_non_normalized": null,
+                    "State_non_normalized": null,
+                    "CountryCode_non_normalized": "IB",
+                    "Residence_code_non_normalized": null,
+                    "ZIP_Postal_Code_non_normalized": "160008",
+                    "Address_indicator_non_normalized": null,
+                    "Fifth_Line_Of_Address_non_normalized": null,
+                    "First_Line_Of_Address_non_normalized": "INDUSIND BANK",
+                    "Third_Line_Of_Address_non_normalized": "SECTOR 8C",
+                    "Second_Line_Of_Address_non_normalized": "SCO 53-54"
+                  }
+                ],
+                "Value_of_Credits_Last_Month": null,
+                "Scheduled_Monthly_Payment_Amount": null,
+                "Highest_Credit_or_Original_Loan_Amount": "756",
+                "SuitFiledWillfulDefaultWrittenOffStatus": null
+              }
+            ]
+          },
+          "Match_result": { "Exact_match": "Y" },
+          "NonCreditCAPS": {
+            "NonCreditCAPS_Summary": {
+              "NonCreditCAPSLast7Days": "0",
+              "NonCreditCAPSLast30Days": "0",
+              "NonCreditCAPSLast90Days": "0",
+              "NonCreditCAPSLast180Days": "0"
+            }
+          },
+          "TotalCAPS_Summary": {
+            "TotalCAPSLast7Days": "0",
+            "TotalCAPSLast30Days": "0",
+            "TotalCAPSLast90Days": "0",
+            "TotalCAPSLast180Days": "0"
+          },
+          "CreditProfileHeader": {
+            "Version": "V2.4",
+            "ReportDate": "20260928",
+            "ReportTime": "172052",
+            "StageOneId": "2787105679",
+            "Subscriber": null,
+            "ReportNumber": "1790596252392",
+            "Subscriber_Name": "BUREAU DISCLOSURE REPORT WITH CUSTOMIZED MATCH V4"
+          },
+          "Current_Application": {
+            "Current_Application_Details": {
+              "Enquiry_Reason": "6",
+              "Amount_Financed": "0",
+              "Finance_Purpose": null,
+              "Current_Other_Details": {
+                "Income": "0",
+                "Marital_Status": null,
+                "Employment_Status": null,
+                "Time_with_Employer": null,
+                "Number_of_Major_Credit_Card_Held": null
+              },
+              "Duration_Of_Agreement": "0",
+              "Current_Applicant_Details": {
+                "EMailId": null,
+                "Last_Name": "singh",
+                "First_Name": "arun",
+                "Gender_Code": null,
+                "IncomeTaxPan": "AQWPS3422L",
+                "Middle_Name1": null,
+                "Middle_Name2": null,
+                "Middle_Name3": null,
+                "PAN_Issue_Date": null,
+                "Telephone_Type": null,
+                "Passport_number": null,
+                "MobilePhoneNumber": "9914996777",
+                "Ration_Card_Number": null,
+                "PAN_Expiration_Date": null,
+                "Passport_Issue_Date": null,
+                "Telephone_Extension": null,
+                "Universal_ID_Number": null,
+                "Voter_ID_Issue_Date": null,
+                "Driver_License_Number": null,
+                "Voter_s_Identity_Card": null,
+                "Ration_Card_Issue_Date": null,
+                "Date_Of_Birth_Applicant": null,
+                "Universal_ID_Issue_Date": null,
+                "Passport_Expiration_Date": null,
+                "Voter_ID_Expiration_Date": null,
+                "Driver_License_Issue_Date": null,
+                "Ration_Card_Expiration_Date": null,
+                "Universal_ID_Expiration_Date": null,
+                "Driver_License_Expiration_Date": null,
+                "Telephone_Number_Applicant_1st": null
+              },
+              "Current_Applicant_Address_Details": [
+                {
+                  "City": "",
+                  "State": "",
+                  "PINCode": "",
+                  "Landmark": "",
+                  "Country_Code": "IB",
+                  "BldgNoSocietyName": "",
+                  "FlatNoPlotNoHouseNo": "",
+                  "RoadNoNameAreaLocality": ""
+                }
+              ],
+              "Current_Applicant_Additional_AddressDetails": null
+            }
+          }
+        }
+      }
+    },
+    "message": "success",
+    "result_code": 101,
+    "http_response_code": 200
+  },
+  "status": true,
+  "message": "Credit Analytics Success",
+  "request_id": "SATMAT_851161790596251",
+  "channel_ref": "channel2",
+  "reference_number": "REF544D93857CC8"
+}

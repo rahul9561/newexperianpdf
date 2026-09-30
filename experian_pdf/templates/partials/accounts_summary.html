@@ -1,0 +1,34 @@
+{% from "partials/_macros.html" import section_bar %}
+<section class="section">
+  <div class="keep-with-next">
+    {{ section_bar("Summary") }}
+    <p class="intro">{{ content.SUMMARY_INTRO }}</p>
+  </div>
+  <div class="card acc-summary">
+    <table class="acc-table">
+      <colgroup>
+        <col style="width:5%"><col style="width:16.5%"><col style="width:18.5%"><col style="width:8.7%">
+        <col style="width:8.6%"><col style="width:7.9%"><col style="width:8.7%"><col style="width:8.6%">
+        <col style="width:8.7%"><col style="width:8.8%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Sr.no</th><th>Account Type</th><th>Account No</th><th>Date Reported</th><th>Account Status</th>
+          <th>Date Opened</th><th>Currency code</th><th>Sanction Amt / Highest Credit</th>
+          <th>Current Balance</th><th>Overdue Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for a in accounts %}
+        <tr>
+          <td>{{ a.sr }}</td><td>{{ a.account_type }}</td><td class="brk">{{ a.account_number }}</td>
+          <td>{{ a.date_reported }}</td><td>{{ a.status }}</td><td>{{ a.date_opened }}</td>
+          <td>{{ a.currency }}</td><td>{{ a.sanction }}</td><td>{{ a.current_balance }}</td><td>{{ a.overdue }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="10" class="empty">{{ content.NO_ACCOUNTS }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>

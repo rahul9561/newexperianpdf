@@ -1,0 +1,9 @@
+WeasyPrint>=62,<70
+Jinja2>=3.1
+
+# optional faster renderer: pip install "experian-pdf[chromium]" then `playwright install chromium`
+# playwright>=1.40
+
+# tests / visual comparison
+pytest>=8
+PyMuPDF>=1.24

@@ -1,0 +1,33 @@
+{% from "partials/_macros.html" import section_bar, check %}
+<section class="section">
+  <div class="keep-with-next">
+    {{ section_bar("Credit Enquiries") }}
+    <p class="intro">{{ content.ENQUIRIES_INTRO }}</p>
+  </div>
+  {% for e in enquiries %}
+  <div class="card enquiry">
+    <table class="holder-row enq-head">
+      <tr>
+        <td>
+          <div class="holder-name">{{ e.name }}</div>
+          <div class="holder-addr"><span class="lbl">Address -</span><span class="addr">{{ e.address }}</span></div>
+        </td>
+        <td class="acct-no">{{ check() }} <span class="lbl">Cr Enq :</span>{{ e.index }}</td>
+      </tr>
+    </table>
+    <table class="enq-cols">
+      <tr>
+        {% for col in [e.col1, e.col2, e.col3] %}
+        <td class="enq-col">
+          {% for label, value in col %}
+          <div class="kv enq-kv"><span class="v">{{ value }}</span><span class="k">{{ label }}</span></div>
+          {% endfor %}
+        </td>
+        {% endfor %}
+      </tr>
+    </table>
+  </div>
+  {% else %}
+  <div class="card empty-card">{{ content.NO_ENQUIRIES }}</div>
+  {% endfor %}
+</section>

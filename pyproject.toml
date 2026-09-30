@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "experian-pdf"
+version = "1.0.0"
+description = "Render Experian India credit report JSON (INProfileResponse) as a PDF"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+dependencies = [
+    "WeasyPrint>=62,<70",
+    "Jinja2>=3.1",
+]
+
+[project.optional-dependencies]
+chromium = ["playwright>=1.40"]
+test = ["pytest>=8", "PyMuPDF>=1.24"]
+
+[project.scripts]
+experian-pdf = "experian_pdf.cli:main"
+
+[tool.setuptools]
+packages = ["experian_pdf"]
+include-package-data = false
+
+# Only the files the engine actually uses are shipped (the Montserrat/Poppins/variable Roboto
+# fonts in experian_pdf/assets are not referenced and would add ~20 MB).
+[tool.setuptools.package-data]
+experian_pdf = [
+    "templates/*.html",
+    "templates/partials/*.html",
+    "static/css/*.css",
+    "assets/experian_logo.svg",
+    "assets/Roboto/OFL.txt",
+    "assets/Roboto/static/Roboto-Regular.ttf",
+    "assets/Roboto/static/Roboto-Bold.ttf",
+    "assets/Roboto/static/Roboto-Italic.ttf",
+    "assets/Roboto/static/Roboto-BoldItalic.ttf",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "slow: timing/performance tests (deselect with -m 'not slow')",
+]

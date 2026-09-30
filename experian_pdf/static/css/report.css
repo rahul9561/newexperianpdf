@@ -1,0 +1,235 @@
+/* Experian credit report. Measurements taken from pdfsample/experiansample.pdf (pt). */
+
+@page {
+  size: A4;
+  margin: 11pt;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 8pt;
+  line-height: 1.15;
+  color: #000000;
+}
+
+table { border-collapse: separate; border-spacing: 0; width: 100%; }
+td, th { padding: 0; vertical-align: top; text-align: left; font-weight: normal; }
+p { margin: 0; }
+b { font-weight: 700; }
+
+.lbl { color: #2d76c9; }
+.val { text-align: right; }
+.brk { word-break: break-all; overflow-wrap: anywhere; }
+
+/* keep-together helpers */
+.keep { break-inside: avoid; }
+.keep-with-next { break-after: avoid; break-inside: avoid; }
+tr { break-inside: avoid; }
+thead { display: table-header-group; }
+
+/* "shadowed" card (WeasyPrint has no box-shadow; a soft border approximates it) */
+.card {
+  background: #ffffff;
+  border: 0.75pt solid #efefef;
+  border-bottom: 1.5pt solid #e4e4e4;
+}
+
+/* ---------------------------------------------------------------- header */
+.page-header { height: 86pt; }
+.logo-cell { width: 110pt; }
+.logo { width: 100pt; height: 32.6pt; display: block; }
+.title-cell { text-align: right; }
+.report-title {
+  font-size: 15pt; font-weight: 700; color: #2d76c9;
+  margin-top: 7pt; line-height: 1;
+}
+.report-meta {
+  margin-top: 13.5pt; padding-right: 10pt;
+  font-size: 10pt; line-height: 14pt; color: #333333;
+}
+
+/* ---------------------------------------------------------------- section bar */
+.section-bar {
+  position: relative;
+  height: 20pt;
+  margin-top: 0;
+  background: linear-gradient(to bottom,
+      #f4f4f4 0%, #f4f4f4 48%, #eaeaea 50%, #f4f4f4 53%,
+      #eeeeee 60%, #e6e6e6 80%, #dbdbdb 100%);
+  break-after: avoid;
+}
+.bar-tick {
+  position: absolute; left: 6.6pt; top: 7.4pt; width: 2.2pt; height: 4.6pt;
+  border-right: 1.4pt solid #1ea729; border-bottom: 1.4pt solid #1ea729; transform: rotate(40deg);
+}
+.bar-title {
+  position: absolute; left: 14.3pt; top: 3.2pt;
+  font-size: 12pt; font-weight: 700; letter-spacing: 0.1pt;
+  text-transform: uppercase; color: #000000; line-height: 1;
+}
+.section { margin-bottom: 9pt; }
+
+.intro {
+  color: #ffa500;
+  padding: 9pt 5pt 0 5pt;
+  line-height: 9pt;
+}
+
+/* ---------------------------------------------------------------- application info */
+.app-info { padding: 12pt 10pt 13pt 10pt; }
+.kv3 { table-layout: fixed; }
+.kv3 col.l { width: 88pt; }
+.kv3 col.v { width: auto; }
+.kv3 col.g { width: 21pt; }
+.kv3 td { height: 24pt; }
+.kv3 tr:last-child td { height: 10pt; }
+.kv3 .val { text-align: right; overflow-wrap: anywhere; }
+
+/* ---------------------------------------------------------------- score */
+.score-row { margin-top: 7pt; table-layout: fixed; }
+.gauge-cell { width: 165pt; padding-top: 7pt; }
+.gauge { display: block; margin-left: 13pt; }
+.gauge-scale { width: 150pt; margin-top: 2pt; }
+.gauge-scale td { font-size: 8pt; }
+.gauge-scale .max { text-align: right; }
+.score-value {
+  width: 60pt; font-size: 15pt; font-weight: 700; padding-left: 10pt; padding-top: 0;
+}
+.factors-cell { padding-left: 6pt; }
+.factors {
+  padding: 7pt 8pt 8pt 8pt;
+  border-right: none;
+  color: #555555;
+  height: 108pt;
+}
+.factors-title { font-size: 7.5pt; font-weight: 700; color: #333333; }
+.factor { margin-top: 11pt; line-height: 9pt; }
+.factors-title + .factor { margin-top: 0.5pt; }
+
+/* ---------------------------------------------------------------- report summary */
+.summary-cards { table-layout: fixed; margin-top: 1pt; }
+.summary-cards .gap { width: 9.8pt; }
+.sc { padding: 4pt 5pt 8pt 5pt; height: 112pt; }
+.sc-title { font-weight: 700; color: #2d76c9; line-height: 9pt; min-height: 9pt; }
+.sc-rows { margin-top: 7.5pt; table-layout: fixed; }
+.sc-rows td { height: 19pt; line-height: 9pt; }
+.sc-rows td.lbl { width: 122pt; padding-right: 3pt; }
+.sc-rows td.val { text-align: left; }
+.sc-rows.narrow td.lbl { width: 95pt; }
+
+/* ---------------------------------------------------------------- summary table */
+.acc-summary { margin-top: 18pt; padding: 3pt 0 4pt 0; }
+.acc-table { table-layout: fixed; }
+.acc-table th {
+  font-weight: 700; color: #2d76c9; vertical-align: middle;
+  padding: 2pt 2pt 2pt 3pt; line-height: 9pt; height: 32pt;
+}
+.acc-table td { padding: 1pt 2pt 1pt 1pt; line-height: 9pt; vertical-align: middle; }
+.acc-table .empty { text-align: center; padding: 6pt; }
+
+/* ---------------------------------------------------------------- account blocks */
+.account { margin-top: 12pt; }
+.holder { padding: 15pt 15pt 16pt 15.6pt; border-color: #dddddd; border-width: 0.6pt; }
+.holder-row td { vertical-align: top; }
+.holder-name { font-weight: 700; color: #2d76c9; line-height: 9pt; overflow-wrap: anywhere; }
+.holder-addr { margin-top: 5pt; line-height: 11pt; }
+.holder-addr .lbl { font-size: 8pt; margin-right: 5pt; }
+.holder-addr .addr { font-size: 9pt; overflow-wrap: anywhere; }
+.acct-no { width: 80pt; text-align: right; font-size: 9pt; font-weight: 700; white-space: nowrap; }
+.acct-no .lbl { font-weight: 700; }
+.check {
+  display: inline-block; width: 3.4pt; height: 7.6pt; margin: 0 6pt -0.5pt 0;
+  border-right: 1.6pt solid #008000; border-bottom: 1.6pt solid #008000; transform: rotate(40deg);
+}
+
+.acct-block { margin-top: 0; padding: 10pt 11.6pt 12pt 1.6pt; border: none; border-bottom: 1.5pt solid #e4e4e4; }
+.sub-title { font-weight: 700; color: #2d76c9; line-height: 9pt; }
+.sub-title.ruled { padding: 0 0 5pt 0; border-bottom: 0.75pt solid #f2f2f2; }
+
+.terms3 { margin: 8pt 0 0 13pt; width: 545pt; table-layout: fixed;
+          border: 0.75pt solid #e8e8e8; }
+.terms-col { padding: 6pt 8.8pt 12pt 5.8pt; border-right: 0.75pt solid #e8e8e8; }
+.terms-col:last-child { border-right: none; }
+.terms-title { font-weight: 700; color: #2d76c9; padding-bottom: 3pt; border-bottom: 0.75pt solid #999999; }
+/* label/value rows: value floats right, label wraps around it */
+.kv { min-height: 9pt; line-height: 9pt; }
+.kv .k { color: #2d76c9; }
+.kv .v { float: right; text-align: right; white-space: nowrap; padding-left: 4pt; }
+.kv .v.long { white-space: normal; max-width: 55%; overflow-wrap: anywhere; }
+.terms-rows { margin-top: 6.5pt; margin-left: 3pt; }
+.terms-rows .kv { padding-bottom: 12pt; }
+.terms-rows .k { font-weight: 700; }
+
+/* payment history grid */
+.ph-title { margin: 14pt 0 11pt 5pt; break-after: avoid; }
+.ph { width: 452.6pt; margin-left: 5pt; table-layout: fixed;
+      border-left: 0.6pt solid #dddddd; border-top: 0.6pt solid #dddddd; border-bottom: 1pt solid #e4e4e4; }
+.ph th, .ph td { width: 34.7pt; height: 30pt; border-right: 0.6pt solid #dddddd; border-bottom: 0.6pt solid #dddddd;
+                 text-align: center; vertical-align: middle; }
+.ph th { background: #f4f4f4; font-weight: 700; color: #2d76c9; }
+.ph td.yr, .ph th.yr { background: #f4f4f4; font-weight: 700; color: #2d76c9; }
+.dpd {
+  display: inline-block; width: 20pt; height: 20pt; line-height: 20pt; border-radius: 10pt;
+  color: #ffffff; text-align: center;
+}
+.dpd.ok { background: #2e9e4c; }
+.dpd.late { background: #fa7524; }
+.dpd.bad { background: #e02b2b; }
+
+/* consumer personal details */
+.personal-wrap { margin-top: 9pt; }
+.pd-title { margin-left: 0; margin-bottom: 4pt; break-after: avoid; }
+.personal { table-layout: fixed; border: 0.5pt solid #dddddd; border-bottom: 1.5pt solid #e4e4e4; }
+.pd-left { width: 160pt; padding: 7pt 0 8pt 1.6pt; }
+.pd-kv { table-layout: fixed; }
+.pd-kv td { height: 30pt; line-height: 9pt; }
+.pd-kv td.lbl { width: 62pt; }
+.pd-mid { width: 256pt; padding-top: 3pt; }
+.pd-phones { table-layout: fixed; }
+.pd-phones th { font-weight: 700; color: #2d76c9; line-height: 9pt; vertical-align: middle; padding: 0 2pt; height: 20pt; }
+.pd-phones th.pt { width: 28pt; }
+.pd-phones th.pn { width: 48pt; }
+.pd-phones th.pe { width: 38pt; }
+.pd-phones td { padding: 1pt 2pt 4pt 2pt; line-height: 9pt; }
+.pd-phones td.ptype { color: #2d76c9; }
+.pd-phones td.ptype.none { color: #000000; }
+.pd-right { padding: 3pt 3pt 6pt 0; }
+.pd-ids { table-layout: fixed; }
+.pd-ids th { font-weight: 700; color: #2d76c9; line-height: 9pt; vertical-align: middle; padding: 0 2pt 0 3pt; }
+.pd-ids th.it { width: 48pt; }
+.pd-ids th.in { width: 52pt; }
+.pd-ids td { padding: 2pt 2pt 2pt 0; line-height: 9pt; vertical-align: middle; }
+.pd-ids td.lbl { padding-left: 0; }
+
+/* ---------------------------------------------------------------- enquiries */
+.enquiry { margin-top: 9pt; padding: 12pt 8pt 12pt 10pt; break-inside: avoid; }
+.enq-head { border-bottom: 0.75pt solid #e8e8e8; }
+.enq-head td { padding-bottom: 8pt; }
+.enq-cols { table-layout: fixed; margin-top: 8pt; }
+.enq-col { padding-right: 10pt; }
+.enq-col:last-child { padding-right: 2pt; }
+.enq-kv { padding-bottom: 10pt; }
+.enq-kv .v.long { max-width: 60%; }
+.empty-card { margin-top: 9pt; padding: 10pt; }
+
+/* ---------------------------------------------------------------- static sections */
+.plain { padding: 0 10pt 12pt 10pt; border: none; border-bottom: 1.5pt solid #e4e4e4; }
+.plain .intro { padding: 16pt 0 3pt 0; }
+.contact { color: #0000ff; line-height: 14.5pt; padding-top: 10pt; }
+.legend { color: #87ceeb; margin: 0; padding: 14pt 0 0 21pt; line-height: 14.5pt; }
+.legend ul { list-style: none; margin: 0; padding-left: 20pt; }
+.legend ul li { position: relative; }
+.legend ul li::before {
+  content: ""; position: absolute; left: -10pt; top: 5.2pt;
+  width: 3pt; height: 3pt; border: 0.6pt solid #87ceeb; border-radius: 50%;
+}
+.legend li b { font-weight: 700; }
+.end-of-report { text-align: center; color: #808080; font-weight: 700; padding: 10pt 0 8pt 0; margin-top: 0; }
+.legend > li::marker { font-size: 11pt; }
+.disclaimer { color: #2d76c9; line-height: 14.5pt; padding-top: 12pt; }
