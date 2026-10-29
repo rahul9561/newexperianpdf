@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "experian-pdf"
-version = "1.0.0"
+version = "1.0.1"
 description = "Render Experian India credit report JSON (INProfileResponse) as a PDF"
 readme = "README.md"
 requires-python = ">=3.10"
