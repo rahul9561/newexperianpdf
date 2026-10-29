@@ -10,6 +10,11 @@ from experian_pdf.parser import as_list, find_profile
 DUMMY = load_fixture("dummy_report")
 
 
+def rows(group) -> dict:
+    """(icon, label, value) card rows -> {label: value}."""
+    return {label: value for _, label, value in group}
+
+
 @pytest.fixture
 def report():
     return copy.deepcopy(DUMMY)
@@ -46,15 +51,16 @@ def test_accounts(report):
     assert a["date_reported"] == "2025-12-31"
     assert a["holder_name"] == "TESTFIRST TESTLAST"
     assert a["address"] == "FLAT 101 TEST RESIDENCY SAMPLE ROAD TESTCITY MAHARASHTRA 400001"
-    assert a["personal"] == {"dob": "1990-01-15", "gender": "Female", "occupation": "Salaried",
-                             "email": "TEST.USER@EXAMPLE.COM"}
+    assert rows(a["holder_rows"]) == {"Name": "TESTFIRST TESTLAST", "Date of Birth": "1990-01-15",
+                                      "Gender": "Female", "Occupation": "Salaried",
+                                      "Email Address": "TEST.USER@EXAMPLE.COM"}
     assert a["phone_rows"] == [[{"type": "1", "number": "9000000001", "ext": "-"},
                                 {"type": "3", "number": "02200000000", "ext": "12"}]]
     assert a["ids"][0] == {"type": "PAN", "number": "ABCDE1234F", "issue": "-", "expiry": "-"}
-    assert dict(a["terms"])["Rate of Interest:"] == "11.5"
-    assert dict(a["description"])["Loan Type:"] == "HOUSING LOAN"
-    assert dict(a["description"])["SuitFiled Willful Default:"] == "No Suit Filed"
-    assert dict(a["terms"])["Ownership:"] == "Individual"
+    assert rows(a["terms"])["Rate of Interest"] == "11.5"
+    assert rows(a["description"])["Loan Type"] == "HOUSING LOAN"
+    assert rows(a["description"])["SuitFiled Willful Default"] == "No Suit Filed"
+    assert rows(a["terms"])["Ownership"] == "Individual"
 
     card = ctx["accounts"][1]
     assert card["account_type"] == "CREDIT CARD" and card["overdue"] == "4500"
@@ -64,7 +70,7 @@ def test_accounts(report):
 
     closed = ctx["accounts"][2]
     assert closed["status"] == "CLOSED"
-    assert dict(closed["terms"])["Date Closed:"] == "2023-06-30"
+    assert rows(closed["terms"])["Date Closed"] == "2023-06-30"
 
 
 def test_enquiries(report):
@@ -127,7 +133,8 @@ def test_null_values_render_dash(report):
     assert acc["account_type"] == "-" and acc["status"] == "-" and acc["address"] == "-"
     assert acc["history"] == []
     assert acc["phone_rows"] == [[{"type": "-", "number": "-", "ext": "-"}] * 2]
-    assert all(v == "-" for _, v in acc["terms"])
+    assert all(v == "-" for _, _, v in acc["terms"])
+    assert rows(acc["lender_rows"]) == {"Lender": "N/A", "Reported Address": "-"}
 
 
 def test_empty_arrays(report):
@@ -211,3 +218,72 @@ def test_as_list():
     assert as_list({"a": 1}) == [{"a": 1}]
     assert as_list([{"a": 1}, "x", None]) == [{"a": 1}]
     assert as_list("text") == []
+
+
+# ------------------------------------------------------------------ lenders (input/sample.json)
+
+def test_sample_lender_names():
+    ctx = parse_report(load_sample())
+    assert len(ctx["accounts"]) == 15
+    names = [a["lender_name"] for a in ctx["accounts"]]
+    assert names.count("HDFC Bank Ltd") == 5
+    assert names.count("ICICI Bank") == 3
+    assert "Citicorp Finance ( I ) ltd" in names
+
+
+def test_sample_lender_summary():
+    lenders = {row["lender"]: row for row in parse_report(load_sample())["lenders"]}
+    assert len(lenders) == 9
+    assert sum(int(row["total"]) for row in lenders.values()) == 15
+    assert lenders["HDFC Bank Ltd"] == {"lender": "HDFC Bank Ltd", "total": "5", "active": "3", "closed": "2",
+                                        "current_balance": "2718164", "sanction": "4821723"}
+    assert lenders["ICICI Bank"] == {"lender": "ICICI Bank", "total": "3", "active": "1", "closed": "2",
+                                     "current_balance": "534436", "sanction": "2280385"}
+    assert list(lenders)[:2] == ["HDFC Bank Ltd", "ICICI Bank"]  # most accounts first
+
+
+@pytest.mark.parametrize("raw, expected", [
+    ("  HDFC   Bank\tLtd ", "HDFC Bank Ltd"), ("", "N/A"), ("   ", "N/A"), (None, "N/A")])
+def test_lender_name_cleanup(report, raw, expected):
+    profile(report)["CAIS_Account"]["CAIS_Account_DETAILS"][0]["Subscriber_Name"] = raw
+    ctx = parse_report(report)
+    assert ctx["accounts"][0]["lender_name"] == expected
+    assert expected in [row["lender"] for row in ctx["lenders"]]
+
+
+def test_lender_name_missing_key(report):
+    del profile(report)["CAIS_Account"]["CAIS_Account_DETAILS"][0]["Subscriber_Name"]
+    assert parse_report(report)["accounts"][0]["lender_name"] == "N/A"
+
+
+# ------------------------------------------------------------------ account cards (input/sample.json)
+
+def test_sample_account_2_cards():
+    a = parse_report(load_sample())["accounts"][1]
+    holder, terms = rows(a["holder_rows"]), rows(a["terms"])
+    assert a["lender_name"] == "ICICI Bank"
+    assert holder["Name"] != "Male" and holder["Name"] == "SINGH"
+    assert holder["Gender"] == "Male"
+    assert terms["Account Number"] == "XXXXXXXXXXXX9961"
+    assert terms["Date Opened"] == "2024-04-30"
+    assert list(terms) == ["Account Number", "Date Opened", "Date Closed", "Ownership", "Rate of Interest"]
+    assert rows(a["lender_rows"])["Lender"] == "ICICI Bank"
+    assert rows(a["lender_rows"])["Reported Address"].endswith("PUNJAB 140603")
+
+
+@pytest.mark.parametrize("code, expected", [
+    ("S", "Salaried"), ("N", "Non-Salaried"), ("P", "Self Employed Professional"), ("E", "Self Employed"),
+    ("Z", "-"), (None, "-")])
+def test_occupation_mapping(report, code, expected):
+    profile(report)["CAIS_Account"]["CAIS_Account_DETAILS"][0]["Occupation_Code"] = code
+    assert rows(parse_report(report)["accounts"][0]["holder_rows"])["Occupation"] == expected
+
+
+def test_holder_name_collapses_spaces(report):
+    holder = profile(report)["CAIS_Account"]["CAIS_Account_DETAILS"][0]["CAIS_Holder_Details"]
+    holder = holder[0] if isinstance(holder, list) else holder
+    holder.update({"First_Name_Non_Normalized": " RAM  ", "Middle_Name_1_Non_Normalized": "KUMAR   LAL",
+                   "Surname_Non_Normalized": None, "Gender_Code": "1"})
+    holder_rows = rows(parse_report(report)["accounts"][0]["holder_rows"])
+    assert holder_rows["Name"] == "RAM KUMAR LAL"
+    assert holder_rows["Gender"] == "Male"

@@ -57,7 +57,7 @@ def time_hms(value) -> str:
     return s
 
 
-def _to_decimal(value) -> Decimal | None:
+def to_decimal(value) -> Decimal | None:
     s = text(value, "").replace(",", "")
     if not s:
         return None
@@ -68,7 +68,7 @@ def _to_decimal(value) -> Decimal | None:
 
 
 def to_int(value) -> int | None:
-    d = _to_decimal(value)
+    d = to_decimal(value)
     if d is None:
         return None
     try:
@@ -79,7 +79,7 @@ def to_int(value) -> int | None:
 
 def amount(value) -> str:
     """Plain amount exactly like the sample: ``0001319695`` -> ``1319695``."""
-    d = _to_decimal(value)
+    d = to_decimal(value)
     if d is None:
         return text(value)
     if d == d.to_integral_value():
@@ -89,7 +89,7 @@ def amount(value) -> str:
 
 def indian_number(value) -> str:
     """``3252600`` -> ``32,52,600`` (Indian digit grouping)."""
-    d = _to_decimal(value)
+    d = to_decimal(value)
     if d is None:
         return text(value)
     negative = d < 0
@@ -119,7 +119,7 @@ def currency_inr(value) -> str:
 
 def rate(value) -> str:
     """``10.990`` -> ``10.99``; ``9.000`` -> ``9``."""
-    d = _to_decimal(value)
+    d = to_decimal(value)
     if d is None:
         return text(value)
     return format(d.normalize(), "f") if d != d.to_integral_value() else str(int(d))

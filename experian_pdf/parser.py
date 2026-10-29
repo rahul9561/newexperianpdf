@@ -38,6 +38,7 @@ ADDRESS_LINE_KEYS = [
     "Fourth_Line_Of_Address_non_normalized",
     "Fifth_Line_Of_Address_non_normalized",
 ]
+NO_LENDER = "N/A"
 
 
 # --------------------------------------------------------------------------- helpers
@@ -84,7 +85,8 @@ def _first(items: list[dict], key: str) -> Any:
 
 
 def _full_name(*parts: Any) -> str:
-    return fmt.join_nonempty(parts)
+    name = fmt.join_nonempty(parts)
+    return " ".join(name.split())
 
 
 # --------------------------------------------------------------------------- input
@@ -298,6 +300,40 @@ def _ids(id_items: list[dict], holders: list[dict]) -> list[dict]:
     return rows
 
 
+def _lender_name(value: Any) -> str:
+    """Subscriber_Name with runs of whitespace collapsed; empty -> ``N/A``."""
+    return " ".join(fmt.text(value, "").split()) or NO_LENDER
+
+
+def _sanction(a: dict) -> Any:
+    sanction = a.get("Highest_Credit_or_Original_Loan_Amount")
+    return a.get("Credit_Limit_Amount") if fmt.is_empty(sanction) else sanction
+
+
+def _lender_summary(raw_accounts: list[dict]) -> list[dict]:
+    """One row per lender: account counts and summed balance / sanction, most accounts first."""
+    groups: dict[str, dict] = {}
+    for a in raw_accounts:
+        g = groups.setdefault(_lender_name(a.get("Subscriber_Name")), {
+            "total": 0, "active": 0, "closed": 0, "balance": [], "sanction": []})
+        g["total"] += 1
+        g["active"] += fmt.text(a.get("Account_Status"), "").zfill(2) == "11"
+        g["closed"] += not fmt.is_empty(a.get("Date_Closed"))
+        g["balance"].append(fmt.to_decimal(a.get("Current_Balance")))
+        g["sanction"].append(fmt.to_decimal(_sanction(a)))
+
+    def total(values):
+        values = [v for v in values if v is not None]
+        return fmt.amount(sum(values)) if values else fmt.DASH
+
+    rows = [{"lender": name, "total": str(g["total"]), "active": str(g["active"]),
+             "closed": str(g["closed"]), "current_balance": total(g["balance"]),
+             "sanction": total(g["sanction"])}
+            for name, g in groups.items()]
+    rows.sort(key=lambda row: -int(row["total"]))  # stable: ties keep report order
+    return rows
+
+
 def _account(a: dict, index: int) -> dict:
     holders = as_list(a.get("CAIS_Holder_Details"))
     id_items = as_list(a.get("CAIS_Holder_ID_Details"))
@@ -305,11 +341,15 @@ def _account(a: dict, index: int) -> dict:
     holder = next((h for h in holders if any(
         not fmt.is_empty(h.get(k)) for k in ("First_Name_Non_Normalized", "Surname_Non_Normalized"))), {})
 
+    holder_name = _full_name(
+        holder.get("First_Name_Non_Normalized"), holder.get("Middle_Name_1_Non_Normalized"),
+        holder.get("Middle_Name_2_Non_Normalized"), holder.get("Middle_Name_3_Non_Normalized"),
+        holder.get("Surname_Non_Normalized"))
+    lender_name = _lender_name(a.get("Subscriber_Name"))
+    address = _address(as_list(a.get("CAIS_Holder_Address_Details")))
     status, is_active, is_closed = _account_status(a.get("Account_Status"))
     acc_type = fmt.code_label(a.get("Account_Type"), codes.ACCOUNT_TYPE, "Account_Type")
-    sanction = a.get("Highest_Credit_or_Original_Loan_Amount")
-    if fmt.is_empty(sanction):
-        sanction = a.get("Credit_Limit_Amount")
+    sanction = _sanction(a)
     date_reported = fmt.date_ymd(a.get("Date_Reported"))
     account_number = fmt.text(a.get("Account_Number"))
     current_balance = fmt.amount(a.get("Current_Balance"))
@@ -318,11 +358,9 @@ def _account(a: dict, index: int) -> dict:
     return {
         "index": index,
         "sr": f"Acc{index}",
-        "holder_name": _full_name(
-            holder.get("First_Name_Non_Normalized"), holder.get("Middle_Name_1_Non_Normalized"),
-            holder.get("Middle_Name_2_Non_Normalized"), holder.get("Middle_Name_3_Non_Normalized"),
-            holder.get("Surname_Non_Normalized")),
-        "address": _address(as_list(a.get("CAIS_Holder_Address_Details"))),
+        "lender_name": lender_name,
+        "holder_name": holder_name,
+        "address": address,
         "is_active": is_active,
         "is_closed": is_closed,
         # summary table
@@ -335,44 +373,46 @@ def _account(a: dict, index: int) -> dict:
         "sanction": fmt.amount(sanction),
         "current_balance": current_balance,
         "overdue": overdue,
-        # 3-column detail block
+        # detail cards: (icon, label, value) rows
+        "holder_rows": [
+            ("person", "Name", holder_name),
+            ("calendar", "Date of Birth", fmt.date_ymd(_first(holders, "Date_of_birth"))),
+            ("gender", "Gender", fmt.code_label(_first(holders, "Gender_Code"), codes.GENDER, "Gender_Code")),
+            ("work", "Occupation", fmt.code_label(a.get("Occupation_Code"), codes.OCCUPATION, "Occupation_Code",
+                                                  fallback_raw=False)),
+            ("mail", "Email Address", fmt.text(_first(id_items, "EMailId") or _first(phone_items, "EMailId"))),
+        ],
+        "lender_rows": [
+            ("bank", "Lender", lender_name),
+            ("pin", "Reported Address", address),
+        ],
         "terms": [
-            ("Account Number:", account_number),
-            ("Date Opened:", fmt.date_ymd(a.get("Open_Date"))),
-            ("Date Closed:", fmt.date_ymd(a.get("Date_Closed"))),
-            ("Ownership:", fmt.code_label(a.get("AccountHoldertypeCode"), codes.OWNERSHIP, "Ownership")),
-            ("Rate of Interest:", fmt.rate(a.get("Rate_of_Interest"))),
-            ("Value of Collateral:", fmt.amount(a.get("Value_of_Collateral"))),
-            ("Type of Collateral:", fmt.text(a.get("Type_of_Collateral"))),
-            ("SuitFiled Willful Default WrittenOff Status:",
-             fmt.text(a.get("SuitFiledWillfulDefaultWrittenOffStatus"))),
+            ("hash", "Account Number", account_number),
+            ("calendar", "Date Opened", fmt.date_ymd(a.get("Open_Date"))),
+            ("calendar", "Date Closed", fmt.date_ymd(a.get("Date_Closed"))),
+            ("users", "Ownership", fmt.code_label(a.get("AccountHoldertypeCode"), codes.OWNERSHIP, "Ownership")),
+            ("percent", "Rate of Interest", fmt.rate(a.get("Rate_of_Interest"))),
         ],
         "description": [
-            ("Date Reported:", date_reported),
-            ("Loan Type:", acc_type),
-            ("Account Status:", status),
-            ("Current Balance:", current_balance),
-            ("Amount Overdue:", overdue),
-            ("Last Payment Date:", fmt.date_ymd(a.get("Date_of_Last_Payment"))),
-            ("SuitFiled Willful Default:",
+            ("calendar", "Date Reported", date_reported),
+            ("file", "Loan Type", acc_type),
+            ("status", "Account Status", status),
+            ("amount", "Current Balance", current_balance),
+            ("alert", "Amount Overdue", overdue),
+            ("calendar", "Last Payment Date", fmt.date_ymd(a.get("Date_of_Last_Payment"))),
+            ("alert", "SuitFiled Willful Default",
              fmt.code_label(a.get("SuitFiled_WilfulDefault"), codes.SUIT_FILED_WILFUL_DEFAULT,
                             "SuitFiled_WilfulDefault")),
         ],
         "details": [
-            ("Credit Limit Amt:", fmt.amount(a.get("Credit_Limit_Amount"))),
-            ("Repayment Tenure:", fmt.strip_zeros(a.get("Repayment_Tenure"))),
-            ("Total Write-off Amt:", fmt.amount(a.get("Written_Off_Amt_Total"))),
-            ("Principal Write-off:", fmt.amount(a.get("Written_Off_Amt_Principal"))),
-            ("Settlement Amt:", fmt.amount(a.get("Settlement_Amount"))),
-            ("Written off Settled Status:", fmt.text(a.get("Written_off_Settled_Status"))),
+            ("amount", "Credit Limit Amt", fmt.amount(a.get("Credit_Limit_Amount"))),
+            ("clock", "Repayment Tenure", fmt.strip_zeros(a.get("Repayment_Tenure"))),
+            ("alert", "Total Write-off Amt", fmt.amount(a.get("Written_Off_Amt_Total"))),
+            ("alert", "Principal Write-off", fmt.amount(a.get("Written_Off_Amt_Principal"))),
+            ("amount", "Settlement Amt", fmt.amount(a.get("Settlement_Amount"))),
+            ("info", "Written off Settled Status", fmt.text(a.get("Written_off_Settled_Status"))),
         ],
         "history": _payment_history(as_list(a.get("CAIS_Account_History"))),
-        "personal": {
-            "dob": fmt.date_ymd(_first(holders, "Date_of_birth")),
-            "gender": fmt.code_label(_first(holders, "Gender_Code"), codes.GENDER, "Gender_Code"),
-            "occupation": fmt.code_label(a.get("Occupation_Code"), codes.OCCUPATION, "Occupation_Code"),
-            "email": fmt.text(_first(id_items, "EMailId") or _first(phone_items, "EMailId")),
-        },
         "phone_rows": _phones(phone_items),
         "ids": _ids(id_items, holders),
     }
@@ -422,11 +462,12 @@ def parse_report(data: Any) -> dict:
     """Return the template context for one report."""
     r = find_profile(data)
 
-    accounts = []
+    accounts, parsed_raw = [], []
     raw_accounts = as_list(_get(r, "CAIS_Account", "CAIS_Account_DETAILS"))
     for i, a in enumerate(raw_accounts, start=1):
         try:
             accounts.append(_account(a, len(accounts) + 1))
+            parsed_raw.append(a)
         except Exception:  # never let one bad account kill the report
             logger.exception("Skipping account #%s: could not parse", i)
 
@@ -443,6 +484,7 @@ def parse_report(data: Any) -> dict:
         "score": _score(r),
         "summary": _report_summary(r, accounts),
         "accounts": accounts,
+        "lenders": _lender_summary(parsed_raw),
         "enquiries": enquiries,
         "months": MONTHS,
     }

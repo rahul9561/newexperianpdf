@@ -1,0 +1,30 @@
+{% from "partials/_macros.html" import section_bar %}
+<section class="section">
+  <div class="keep-with-next">
+    {{ section_bar("Lender Summary") }}
+  </div>
+  <div class="card acc-summary lender-summary">
+    <table class="acc-table">
+      <colgroup>
+        <col style="width:34%"><col style="width:11%"><col style="width:9%"><col style="width:9%">
+        <col style="width:17%"><col style="width:20%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Lender</th><th>Total Accounts</th><th>Active</th><th>Closed</th>
+          <th>Total Current Balance</th><th>Total Sanctioned / Highest Credit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for l in lenders %}
+        <tr>
+          <td class="brk">{{ l.lender }}</td><td>{{ l.total }}</td><td>{{ l.active }}</td><td>{{ l.closed }}</td>
+          <td>{{ l.current_balance }}</td><td>{{ l.sanction }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="6" class="empty">{{ content.NO_ACCOUNTS }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>

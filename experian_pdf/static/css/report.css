@@ -132,10 +132,10 @@ thead { display: table-header-group; }
 }
 .acc-table td { padding: 1pt 2pt 1pt 1pt; line-height: 9pt; vertical-align: middle; }
 .acc-table .empty { text-align: center; padding: 6pt; }
+.lender-summary { margin-top: 9pt; }
 
 /* ---------------------------------------------------------------- account blocks */
 .account { margin-top: 12pt; }
-.holder { padding: 15pt 15pt 16pt 15.6pt; border-color: #dddddd; border-width: 0.6pt; }
 .holder-row td { vertical-align: top; }
 .holder-name { font-weight: 700; color: #2d76c9; line-height: 9pt; overflow-wrap: anywhere; }
 .holder-addr { margin-top: 5pt; line-height: 11pt; }
@@ -148,23 +148,46 @@ thead { display: table-header-group; }
   border-right: 1.6pt solid #008000; border-bottom: 1.6pt solid #008000; transform: rotate(40deg);
 }
 
-.acct-block { margin-top: 0; padding: 10pt 11.6pt 12pt 1.6pt; border: none; border-bottom: 1.5pt solid #e4e4e4; }
-.sub-title { font-weight: 700; color: #2d76c9; line-height: 9pt; }
-.sub-title.ruled { padding: 0 0 5pt 0; border-bottom: 0.75pt solid #f2f2f2; }
-
-.terms3 { margin: 8pt 0 0 13pt; width: 545pt; table-layout: fixed;
-          border: 0.75pt solid #e8e8e8; }
-.terms-col { padding: 6pt 8.8pt 12pt 5.8pt; border-right: 0.75pt solid #e8e8e8; }
-.terms-col:last-child { border-right: none; }
-.terms-title { font-weight: 700; color: #2d76c9; padding-bottom: 3pt; border-bottom: 0.75pt solid #999999; }
-/* label/value rows: value floats right, label wraps around it */
+/* label/value rows (enquiries): value floats right, label wraps around it */
 .kv { min-height: 9pt; line-height: 9pt; }
 .kv .k { color: #2d76c9; }
 .kv .v { float: right; text-align: right; white-space: nowrap; padding-left: 4pt; }
 .kv .v.long { white-space: normal; max-width: 55%; overflow-wrap: anywhere; }
-.terms-rows { margin-top: 6.5pt; margin-left: 3pt; }
-.terms-rows .kv { padding-bottom: 12pt; }
-.terms-rows .k { font-weight: 700; }
+
+.sub-title { font-weight: 700; color: #2d76c9; line-height: 9pt; }
+
+/* lender header strip */
+.lender-strip { table-layout: auto; border-bottom: 1.5pt solid #0B4A8B; margin-bottom: 8pt; }
+.lender-strip td { vertical-align: middle; }
+.ls-logo { width: 1%; padding: 0 8pt 4pt 0; }
+.ls-logo img { display: block; height: 24pt; width: auto; }
+.ls-name { padding: 0 8pt 4pt 0; font-size: 20pt; line-height: 24pt; font-weight: 700; color: #0B4A8B;
+           overflow-wrap: break-word; }
+.ls-badge { width: 1%; padding: 0 8pt 4pt 0; white-space: nowrap; }
+.acct-badge { display: inline-block; padding: 2pt 7pt; border-radius: 8pt; background: #eceff3;
+              color: #5f6b7a; font-size: 8.5pt; font-weight: 700; }
+.ls-accent { width: 36pt; padding: 0; vertical-align: top; }
+.ls-accent svg { display: block; width: 36pt; height: 22pt; }
+
+/* detail cards: blue header bar, icon | label | value rows */
+.dcard { margin-bottom: 8pt; background: #ffffff; border: 1px solid #0B4A8B; border-radius: 6px;
+         box-shadow: 0 1px 3px rgba(11, 74, 139, 0.18); }
+.dcard-head { padding: 4pt 8pt; background: #0B4A8B; color: #ffffff; font-size: 13pt; line-height: 16pt;
+              font-weight: 700; border-radius: 5px 5px 0 0; break-after: avoid; }
+.ico { display: inline-block; width: 12px; height: 12px; color: #0B4A8B; vertical-align: middle; }
+.head-ico { width: 13pt; height: 13pt; margin: -2pt 6pt 0 0; color: #ffffff; }
+.subcard { break-inside: avoid; }
+.subcard-head { padding: 3pt 8pt; background: #E8F0FA; color: #0B4A8B; font-size: 10pt; line-height: 13pt;
+                font-weight: 700; border-top: 1px solid #D0D7E2; break-after: avoid; }
+.dcard-head + .subcard-head { border-top: none; }
+.kv-rows { table-layout: fixed; break-inside: avoid; }
+.kv-rows td { padding: 3.5pt 6pt; font-size: 10pt; line-height: 12.5pt; vertical-align: top;
+              border-top: 1px solid #eef1f5; }
+.kv-rows tr:first-child td { border-top: none; }
+.kv-rows td.kr-ico { width: 14px; padding-right: 0; padding-top: 4.5pt; }
+.kv-rows td.kr-lbl { width: 30%; color: #0B4A8B; border-right: 1px solid #D0D7E2; }
+.kv-rows td.kr-val { font-weight: 700; color: #000000; overflow-wrap: break-word; }
+.dcard > .kv-rows tr:last-child td, .subcard:last-child .kv-rows tr:last-child td { padding-bottom: 5pt; }
 
 /* payment history grid */
 .ph-title { margin: 14pt 0 11pt 5pt; break-after: avoid; }
@@ -186,10 +209,6 @@ thead { display: table-header-group; }
 .personal-wrap { margin-top: 9pt; }
 .pd-title { margin-left: 0; margin-bottom: 4pt; break-after: avoid; }
 .personal { table-layout: fixed; border: 0.5pt solid #dddddd; border-bottom: 1.5pt solid #e4e4e4; }
-.pd-left { width: 160pt; padding: 7pt 0 8pt 1.6pt; }
-.pd-kv { table-layout: fixed; }
-.pd-kv td { height: 30pt; line-height: 9pt; }
-.pd-kv td.lbl { width: 62pt; }
 .pd-mid { width: 256pt; padding-top: 3pt; }
 .pd-phones { table-layout: fixed; }
 .pd-phones th { font-weight: 700; color: #2d76c9; line-height: 9pt; vertical-align: middle; padding: 0 2pt; height: 20pt; }

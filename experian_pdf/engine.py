@@ -19,6 +19,7 @@ import base64
 import json
 import logging
 import os
+import re
 import threading
 from functools import lru_cache
 from pathlib import Path
@@ -39,6 +40,7 @@ CSS_PATH = PACKAGE_DIR / "static" / "css" / "report.css"
 # Fonts + logo ship inside the package; EXPERIAN_PDF_ASSETS can point at a replacement folder.
 DEFAULT_ASSETS_DIR = PACKAGE_DIR / "assets"
 LOGO_FILE = "experian_logo.svg"
+LENDER_LOGO_DIR = "lenders"  # optional <slug>.png per lender, e.g. lenders/hdfc-bank-ltd.png
 
 FONT_FACES = [
     # family, weight, style, path relative to the assets dir
@@ -77,6 +79,24 @@ def _logo_src() -> str:
         logger.warning("Logo not found at %s", path)
         return ""
     return "data:image/svg+xml;base64," + base64.b64encode(data).decode("ascii")
+
+
+def lender_slug(name: str) -> str:
+    """``"Citicorp Finance ( I ) ltd"`` -> ``"citicorp-finance-i-ltd"``."""
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+@lru_cache(maxsize=256)
+def _lender_logo_src(name: str) -> str:
+    """Data URI of ``assets/lenders/<slug>.png`` if that file exists, else ``""`` (text-only header)."""
+    slug = lender_slug(name)
+    if not slug:
+        return ""
+    try:
+        data = (_assets_dir() / LENDER_LOGO_DIR / f"{slug}.png").read_bytes()
+    except OSError:
+        return ""
+    return "data:image/png;base64," + base64.b64encode(data).decode("ascii")
 
 
 def _font_files() -> list[tuple[str, int, str, Path]]:
@@ -142,6 +162,8 @@ def build_context(data: Any) -> dict:
     ctx = parse_report(data)
     ctx["gauge_svg"] = gauge_svg(ctx["score"]["value"])
     ctx["logo_src"] = _logo_src()
+    for account in ctx["accounts"]:
+        account["lender_logo"] = _lender_logo_src(account["lender_name"])
     ctx["content"] = content
     return ctx
 

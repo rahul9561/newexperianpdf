@@ -5,8 +5,8 @@ from conftest import load_fixture, load_sample, pdf_info, pdf_text, profile, req
 
 from experian_pdf import generate_pdf
 
-# 15 accounts in input/sample.json lay out on 17 A4 pages with both renderers.
-EXPECTED_SAMPLE_PAGES = 17
+# 15 accounts in input/sample.json lay out on 23 A4 pages with both renderers.
+EXPECTED_SAMPLE_PAGES = 23
 RENDERERS = ["weasyprint", pytest.param("chromium", marks=requires_chromium)]
 
 
@@ -73,5 +73,5 @@ def test_dummy_report_values(renderer):
     text = pdf_text(generate_pdf(data, renderer=renderer))
     for key, value in expected_values(data).items():
         assert value in text, key
-    for fragment in ["Acct :3", "Cr Enq :2", "HOUSING LOAN", "CREDIT CARD", "CLOSED", "9000000001"]:
+    for fragment in ["Acct: 3", "Cr Enq :2", "HOUSING LOAN", "CREDIT CARD", "CLOSED", "9000000001"]:
         assert fragment in text

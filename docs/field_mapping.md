@@ -73,40 +73,65 @@ If the summary block is missing, counts fall back to values computed from the ac
 | Current Balance | `A.Current_Balance` | amount |
 | Overdue Amount | `A.Amount_Past_Due` | amount |
 
+## 5b. Lender Summary (one row per lender, after the summary table)
+| Column | JSON path | Format |
+|---|---|---|
+| Lender | `A.Subscriber_Name` | whitespace collapsed; empty → `N/A`; rows sorted by account count (ties keep report order) |
+| Total Accounts | count of accounts with that lender | – |
+| Active | count where `A.Account_Status` = `11` | – |
+| Closed | count where `A.Date_Closed` is not empty | – |
+| Total Current Balance | sum of `A.Current_Balance` | amount |
+| Total Sanctioned/Highest Credit | sum of `A.Highest_Credit_or_Original_Loan_Amount` (else `A.Credit_Limit_Amount`) | amount |
+
 ## 6. Credit Account Information Details (repeated per account)
-### 6a. Account header card
+Each account is a lender header strip followed by three cards (blue `#0B4A8B` header bar, rows of
+icon + label | value). Card rows are `(icon, label, value)` tuples built in `parser._account`.
+
+### 6a. Lender header strip
 | PDF element | JSON path | Notes |
 |---|---|---|
-| Name (bold blue) | `A.CAIS_Holder_Details[0]`: `First_Name_Non_Normalized`, `Middle_Name_1..3_Non_Normalized`, `Surname_Non_Normalized` joined | |
-| Address | `A.CAIS_Holder_Address_Details[0]`: lines 1–5, `City_non_normalized`, state (code→name), `ZIP_Postal_Code_non_normalized` joined by spaces | first address only, as sample |
-| Acct :N | index | |
+| Lender name (20pt) | `A.Subscriber_Name` | whitespace collapsed; empty → `N/A` |
+| Logo (optional) | `assets/lenders/<slug>.png` | slug = lower-case name, non-alphanumerics → `-` (e.g. `hdfc-bank-ltd.png`); text only when absent |
+| Acct: N badge | index | |
 
-### 6b. Credit Account details (3 columns)
+### 6b. Account Holder Details card
 | PDF label | JSON path | Format |
 |---|---|---|
-| Account Number | `A.Account_Number` | raw |
-| Date Opened | `A.Open_Date` | ymd-dash |
-| Date Closed | `A.Date_Closed` | ymd-dash |
-| Ownership | `A.AccountHoldertypeCode` | code→label (1 Individual, 2 Joint, 3 Authorised User, 7 Guarantor). **Sample shows `-`** |
-| Rate of Interest | `A.Rate_of_Interest` | number, trailing zeros trimmed |
-| Value of Collateral | `A.Value_of_Collateral` | amount |
-| Type of Collateral | `A.Type_of_Collateral` | raw |
-| SuitFiled Willful Default WrittenOff Status | `A.SuitFiledWillfulDefaultWrittenOffStatus` | raw |
-| Date Reported | `A.Date_Reported` | ymd-dash |
-| Loan Type | `A.Account_Type` | code→label. **Sample shows `-`** (see open questions) |
-| Account Status | `A.Account_Status` | code→label |
-| Current Balance | `A.Current_Balance` | amount |
-| Amount Overdue | `A.Amount_Past_Due` | amount |
-| Last Payment Date | `A.Date_of_Last_Payment` | ymd-dash |
-| SuitFiled Willful Default | `A.SuitFiled_WilfulDefault` | code→label (00 No Suit Filed, 01 Suit Filed, 02 Wilful Default, 03 Suit Filed (Wilful Default)) |
-| Credit Limit Amt | `A.Credit_Limit_Amount` | amount |
-| Repayment Tenure | `A.Repayment_Tenure` | raw |
-| Total Write-off Amt | `A.Written_Off_Amt_Total` | amount |
-| Principal Write-off | `A.Written_Off_Amt_Principal` | amount |
-| Settlement Amt | `A.Settlement_Amount` | amount |
-| Written off Settled Status | `A.Written_off_Settled_Status` | raw code (sample prints `99`) |
+| Name | `A.CAIS_Holder_Details[0]`: `First_Name_Non_Normalized`, `Middle_Name_1..3_Non_Normalized`, `Surname_Non_Normalized` | non-empty parts joined, spaces collapsed |
+| Date of Birth | `A.CAIS_Holder_Details[0].Date_of_birth` | ymd-dash |
+| Gender | `A.CAIS_Holder_Details[0].Gender_Code` | 1 Male, 2 Female, 3 Transgender |
+| Occupation | `A.Occupation_Code` | S Salaried, N Non-Salaried, E Self Employed, P Self Employed Professional, U Unemployed; anything else `-` |
+| Email Address | first non-empty `EMailId` in `A.CAIS_Holder_ID_Details[]` then `A.CAIS_Holder_Phone_Details[]` | |
 
-### 6c. Payment History grid
+### 6c. Lender Details card
+| PDF label | JSON path | Format |
+|---|---|---|
+| Lender | `A.Subscriber_Name` | as 6a |
+| Reported Address | `A.CAIS_Holder_Address_Details[0]`: lines 1–5, `City_non_normalized`, state (code→name), `ZIP_Postal_Code_non_normalized` joined by spaces | first address only |
+
+### 6d. Credit Account Details card (sub-cards)
+| Sub-card | PDF label | JSON path | Format |
+|---|---|---|---|
+| Account Terms | Account Number | `A.Account_Number` | raw, full masked value |
+| | Date Opened | `A.Open_Date` | ymd-dash |
+| | Date Closed | `A.Date_Closed` | ymd-dash |
+| | Ownership | `A.AccountHoldertypeCode` | code→label (1 Individual, 2 Joint, 3 Authorised User, 7 Guarantor) |
+| | Rate of Interest | `A.Rate_of_Interest` | number, trailing zeros trimmed |
+| Account Description | Date Reported | `A.Date_Reported` | ymd-dash |
+| | Loan Type | `A.Account_Type` | code→label |
+| | Account Status | `A.Account_Status` | code→label |
+| | Current Balance | `A.Current_Balance` | amount |
+| | Amount Overdue | `A.Amount_Past_Due` | amount |
+| | Last Payment Date | `A.Date_of_Last_Payment` | ymd-dash |
+| | SuitFiled Willful Default | `A.SuitFiled_WilfulDefault` | code→label (00 No Suit Filed, 01 Suit Filed, 02 Wilful Default, 03 Suit Filed (Wilful Default)) |
+| Account Details | Credit Limit Amt | `A.Credit_Limit_Amount` | amount |
+| | Repayment Tenure | `A.Repayment_Tenure` | raw |
+| | Total Write-off Amt | `A.Written_Off_Amt_Total` | amount |
+| | Principal Write-off | `A.Written_Off_Amt_Principal` | amount |
+| | Settlement Amt | `A.Settlement_Amount` | amount |
+| | Written off Settled Status | `A.Written_off_Settled_Status` | raw code |
+
+### 6e. Payment History grid
 | Element | JSON path | Notes |
 |---|---|---|
 | Year rows (desc) × Jan–Dec | `A.CAIS_Account_History[].Year`, `.Month` | |
@@ -114,13 +139,9 @@ If the summary block is missing, counts fall back to values computed from the ac
 | Circle colour | derived | 0 → green `#2e9e4c`; 1–89 → orange `#fa7524`; ≥90 or B/D/L → red |
 | (`Payment_History_Profile` string) | not used | the monthly history array is authoritative |
 
-### 6d. Consumer Personal details on the Credit Account
+### 6f. Consumer Personal details on the Credit Account
 | PDF label | JSON path | Format |
 |---|---|---|
-| Date of Birth | `A.CAIS_Holder_Details[0].Date_of_birth` | ymd-dash |
-| Gender | `A.CAIS_Holder_Details[0].Gender_Code` | 1 Male, 2 Female, 3 Transgender |
-| Occupation | `A.Occupation_Code` | S Salaried, N Non-Salaried, E Self Employed, P Self Employed Professional, U Unemployed |
-| Email Address | first non-empty `EMailId` in `A.CAIS_Holder_ID_Details[]` then `A.CAIS_Holder_Phone_Details[]` | |
 | Phone Type / Number / Extension (2 per row) | `A.CAIS_Holder_Phone_Details[]`: `Telephone_Type` (leading zeros stripped, as sample), `Mobile_Telephone_Number` or `Telephone_Number`, `Telephone_Extension` | de-duplicated |
 | PAN / Passport / Voter ID / Aadhaar-UID / Driving License / Ration Card, with Date of Issue / Expiry | `A.CAIS_Holder_ID_Details[]` (first non-empty per type): `Income_TAX_PAN`+`PAN_Issue_Date`/`PAN_Expiration_Date`, `Passport_Number`…, `Voter_ID_Number`…, `Universal_ID_Number`…, `Driver_License_Number`…, `Ration_Card_Number`…; falls back to `CAIS_Holder_Details[].Income_TAX_PAN` etc. | dates ymd-dash |
 
@@ -152,6 +173,7 @@ Static text only. **NOT IN JSON.** Kept in `experian_pdf/content.py` (not in tem
 ## JSON fields not shown in the sample PDF
 `R.SCORE.BureauScoreConfidLevel`, `R.Match_result.Exact_match`, `R.TotalCAPS_Summary.*`, `R.UserMessage`,
 `R.CreditProfileHeader.Version/StageOneId/Subscriber_Name`, `A.Portfolio_Type`, `A.Terms_Duration`, `A.Terms_Frequency`,
+`A.Value_of_Collateral`, `A.Type_of_Collateral`, `A.SuitFiledWillfulDefaultWrittenOffStatus`,
 `A.Income*`, `A.Scheduled_Monthly_Payment_Amount`, `A.Identification_Number`, `A.DateOfAddition`,
 `A.Payment_History_Profile`, `A.Date_of_First_Delinquency`, `A.Special_Comment`, `A.*_comments`, `Current_Other_Details.*`,
 `Current_Applicant_Address_Details`, top-level `request_id`, `reference_number`.

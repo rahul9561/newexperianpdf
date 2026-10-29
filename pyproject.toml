@@ -33,6 +33,7 @@ experian_pdf = [
     "templates/partials/*.html",
     "static/css/*.css",
     "assets/experian_logo.svg",
+    "assets/lenders/*.png",
     "assets/Roboto/OFL.txt",
     "assets/Roboto/static/Roboto-Regular.ttf",
     "assets/Roboto/static/Roboto-Bold.ttf",

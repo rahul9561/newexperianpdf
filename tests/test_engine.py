@@ -21,7 +21,7 @@ def test_fixtures_render(name, renderer):
     assert info["fonts"] and all("Roboto" in f for f in info["fonts"]), info["fonts"]
     assert info["embedded"]
     if name == "many_accounts":
-        assert "Acct :40" in text and "Cr Enq :8" in text
+        assert "Acct: 40" in text and "Cr Enq :8" in text
     if name == "missing_sections":
         assert "No credit accounts reported." in text
         assert "No credit enquiries reported." in text
@@ -81,3 +81,30 @@ def test_html_is_escaped():
         "First_Name"] = "<script>x</script>"
     html = render_html(data)
     assert "<SCRIPT>" not in html and "&lt;SCRIPT&gt;" in html
+
+
+def test_sample_pdf_shows_lenders():
+    text = pdf_text(generate_pdf(load_sample(), renderer="weasyprint"), sort=True)
+    assert "HDFC Bank Ltd" in text and "ICICI Bank" in text
+    assert "LENDER SUMMARY" in text  # section bars are upper-cased by CSS
+    # lender header strip (name + "Acct: N" badge) sits above the first account's cards
+    details = text.index("CREDIT ACCOUNT INFORMATION DETAILS")
+    first_card = text.index("Account Holder Details", details)
+    assert details < text.index("HDFC Bank Ltd", details) < first_card
+    assert details < text.index("Acct: 1", details) < first_card
+
+
+def test_lender_logo_used_when_present(tmp_path, monkeypatch):
+    from experian_pdf import engine
+
+    (tmp_path / "lenders").mkdir()
+    (tmp_path / "lenders" / "hdfc-bank-ltd.png").write_bytes(b"\x89PNG\r\n\x1a\nfake")
+    monkeypatch.setenv("EXPERIAN_PDF_ASSETS", str(tmp_path))
+    engine._lender_logo_src.cache_clear()
+    try:
+        accounts = engine.build_context(load_sample())["accounts"]
+    finally:
+        engine._lender_logo_src.cache_clear()
+    assert engine.lender_slug("Citicorp Finance ( I ) ltd") == "citicorp-finance-i-ltd"
+    assert accounts[0]["lender_logo"].startswith("data:image/png;base64,")
+    assert accounts[1]["lender_logo"] == ""  # ICICI Bank: no file -> text-only header

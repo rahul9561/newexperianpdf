@@ -1,4 +1,4 @@
-{% from "partials/_macros.html" import section_bar, check %}
+{% from "partials/_macros.html" import section_bar, icon, kv_rows %}
 <section class="section">
   <div class="keep-with-next">
     {{ section_bar("Credit Account Information Details") }}
@@ -7,35 +7,36 @@
   {% for a in accounts %}
   <div class="account">
     <div class="keep">
-      <div class="card holder">
-        <table class="holder-row">
-          <tr>
-            <td>
-              <div class="holder-name">{{ a.holder_name }}</div>
-              <div class="holder-addr"><span class="lbl">Address -</span><span class="addr">{{ a.address }}</span></div>
-            </td>
-            <td class="acct-no">{{ check() }} <span class="lbl">Acct :</span>{{ a.index }}</td>
-          </tr>
-        </table>
-      </div>
+      <table class="lender-strip">
+        <tr>
+          {% if a.lender_logo %}<td class="ls-logo"><img src="{{ a.lender_logo }}" alt=""></td>{% endif %}
+          <td class="ls-name">{{ a.lender_name }}</td>
+          <td class="ls-badge"><span class="acct-badge">Acct: {{ a.index }}</span></td>
+          <td class="ls-accent">
+            <svg viewBox="0 0 48 30" preserveAspectRatio="none"><polygon points="18,0 48,0 48,30" fill="#0B4A8B"/><polygon points="27,0 36,0 48,12 48,21" fill="#B3122E"/></svg>
+          </td>
+        </tr>
+      </table>
 
-      <div class="card acct-block">
-        <div class="sub-title ruled">Credit Account details</div>
-        <table class="terms3">
-          <tr>
-            {% for title, rows in [("Account Terms", a.terms), ("Account Description", a.description), ("Account Details", a.details)] %}
-            <td class="terms-col">
-              <div class="terms-title">{{ title }}</div>
-              <div class="terms-rows">
-                {% for label, value in rows %}
-                <div class="kv"><span class="v{% if value|length > 24 %} long{% endif %}">{{ value }}</span><span class="k">{{ label }}</span></div>
-                {% endfor %}
-              </div>
-            </td>
-            {% endfor %}
-          </tr>
-        </table>
+      <div class="dcard">
+        <div class="dcard-head">{{ icon("person", "ico head-ico") }}Account Holder Details</div>
+        {{ kv_rows(a.holder_rows) }}
       </div>
+    </div>
+
+    <div class="dcard">
+      <div class="dcard-head">{{ icon("bank", "ico head-ico") }}Lender Details</div>
+      {{ kv_rows(a.lender_rows) }}
+    </div>
+
+    <div class="dcard credit">
+      {% for title, rows in [("Account Terms", a.terms), ("Account Description", a.description), ("Account Details", a.details)] %}
+      <div class="subcard">
+        {% if loop.first %}<div class="dcard-head">{{ icon("card", "ico head-ico") }}Credit Account Details</div>{% endif %}
+        <div class="subcard-head">{{ title }}</div>
+        {{ kv_rows(rows) }}
+      </div>
+      {% endfor %}
     </div>
 
     <div class="sub-title ph-title">Payment History</div>
@@ -61,14 +62,6 @@
       <div class="sub-title pd-title">Consumer Personal details on the Credit Account</div>
       <table class="personal">
         <tr>
-          <td class="pd-left">
-            <table class="pd-kv">
-              <tr><td class="lbl">Date of Birth</td><td>{{ a.personal.dob }}</td></tr>
-              <tr><td class="lbl">Gender</td><td>{{ a.personal.gender }}</td></tr>
-              <tr><td class="lbl">Occupation</td><td>{{ a.personal.occupation }}</td></tr>
-              <tr><td class="lbl">Email Address</td><td class="brk">{{ a.personal.email }}</td></tr>
-            </table>
-          </td>
           <td class="pd-mid">
             <table class="pd-phones">
               <thead>
